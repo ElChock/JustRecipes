@@ -1,0 +1,106 @@
+#top_recetas{
+    width: 25%;
+    height: 610px;
+    margin:-645px 65%;
+}
+
+.top{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+#ul_top_recetas{
+    width: 25%;
+    margin:-680px 65%;
+    display: flex;
+    position: absolute;
+}
+
+.top table{
+    margin: auto;
+    width: 97%;
+    height: 100%;
+    padding:15px 7px;
+}
+
+#imagen_top_receta img{
+    padding: 5px;
+    width: 120px;
+    height: 110px;
+    cursor:pointer;
+    -webkit-transition: all 0.5s ease;
+}
+
+#imagen_top_receta img:hover{
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 20px rgba(64,64,64,0.8);
+}
+
+.top a{
+    font-size: 18px;
+}
+
+.top a:hover{
+    color: #5FB404;
+    font-size: 21px;
+}
+
+#imagen_top_receta{
+    width: 122px;
+}
+
+#dato_usr{
+    width: 80px;
+}
+
+.top tr{
+    background-color: #dddddd;
+}
+
+.top td{
+    max-width: 40px;
+}
+
+.separador{
+    border-bottom: 2px solid #fff;
+}
+
+@media (max-width:1024px){
+    #top_recetas{
+        width: 91%;
+        margin: 0px 5%;
+    }
+    
+    #ul_top_recetas{
+        width: 91%;
+        margin:-25px 5%;
+    }
+}
+
+@media (max-width:350px){
+    .top table td a, #dato_usr, #usuario_receta, #calificacion{
+        display: none;
+    }
+    
+    #imagen_top_receta{
+        width: 100%;
+    }
+    
+    #imagen_top_receta img{
+        margin: 0 45px;
+        padding: 5px;
+        width: 120px;
+        height: 110px;
+        cursor:pointer;
+        -webkit-transition: all 0.5s ease;
+    }
+}
+
+@media (max-width:700px){
+    #top_recetas{
+        width: 94%;
+        height: 610px;
+        margin: 0px 4%;
+    }
+}

@@ -1,0 +1,202 @@
+#mostrar_receta{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+.mostrar{
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.mostrar table{
+    padding-top: 15px;
+    width: 100%;
+}
+
+.sliderm{
+    width:400px;
+    height:230px;
+    position:relative;
+    list-style:none;
+    margin: auto;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    box-shadow:0 0 0 2px white, 0 0 0 5px, 0 5px 10px;
+}
+
+.mostrar table td{
+    padding: 5px;
+}
+
+.mostrar #tam_mostrar_datos{
+    width: 170px;
+}
+
+.mostrar #padd_time{
+    width: 40px;
+}
+
+.mostrar #padd{
+    padding-left: 65px;
+}
+
+.mostrar #tam_mostrar_datos2{
+    text-align: right;
+    width: 80px;
+}
+
+.mostrar h3, .ing h3{
+    font-size: 35px;
+    font-family: 'Handlee', cursive;
+    color: darkgreen;
+}
+
+#calif_receta img{
+    height: 25px;
+    width: 130px;
+}
+
+#tam_slider_receta{
+    width: 515px;
+}
+
+.sliderm img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition:all 0.7s;
+}
+	
+.sliderm input[type="radio"]{
+    display:none;
+}
+	
+.sliderm input[type="radio"]:checked ~ img{
+    opacity:1;
+}
+	
+.sliderm input[type="radio"] + label{
+    position:relative;
+    z-index:1;
+    margin:10px;
+    display:block;
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:50%;
+    border:2px solid black;
+    cursor:pointer;
+}
+	
+.sliderm input[type="radio"]:checked + label{
+    background:black;
+    border:2px solid white;
+}
+
+#ing_receta{
+    background-color: white;
+    width: 54%;
+    margin-left: 9.8%;
+    height: auto;
+    /*border: 1px solid black;*/
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+#top_recetas{
+    width: 25%;
+    height: 610px;
+    margin:-640px 65%;
+}
+
+#ul_top_recetas{
+    width: 25%;
+    margin:-675px 65%;
+    display: flex;
+    position: absolute;
+}
+
+#facil_recetas{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 670px;
+    width: 80%;
+    height: 230px;
+    background-color: #81A635;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+.ing table{
+    width: 100%;
+}
+
+.ing table textarea{
+    width: 100%;
+    height: 120px;
+    border: none;
+    resize: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.ing #com_usr img{
+    width: 100px;
+    height: 100px;
+}
+
+.ing #calif_comentario{
+    font-size: 20px;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    color: darkgreen;
+    width: 120px;
+}
+
+.ing #com_usr{
+    width: 120px;
+    height: 100px;
+}
+
+.ing .botton_coment{
+    /*margin:10px 500px auto;*/
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    width:120px;
+    height:35px;
+    background:#81A635;
+    text-align:center;
+    color:#FFFFFF;
+    font-size:15px;
+    font-weight:bold;
+    box-shadow:0px 1px 1px #000;
+    border-radius:7px;
+    cursor: pointer;
+    position: relative;
+}
+
+.ing .botton_coment:hover{
+    background:#088A29;
+}
+
+.ing .botton_coment:active{
+    background:#81A635; 
+}
+
+.ing{
+    padding-bottom: 10px;
+}

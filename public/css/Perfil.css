@@ -1,0 +1,11 @@
+@media (max-width:1024px){
+    #datos_usuario{
+        display: none;
+    }
+}
+
+#formularioRegistro .button{
+    margin: 10px 130px auto;
+    width: 150px;
+    height: 40px;
+}

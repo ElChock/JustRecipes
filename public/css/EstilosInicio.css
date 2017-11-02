@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Handlee|Kameron|Roboto');
+@import url(menu.css);
+@import url(slider.css);
+@import url(listaRecetas.css);
+@import url(topRecetas.css);
+@import url(facilRecetas.css);
+@import url(footer.css);
+/*font-family: 'Courgette', cursive; font-family: 'Kameron', serif; font-family: 'Handlee', cursive; font-family: 'Roboto', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d6d7db;
+}
+
+.handlee_font{
+    font-family: 'Handlee', cursive;
+}
+
+.roboto_font{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Kameron', serif;
+}
+
+a{
+    font-family: 'Courgette', cursive;
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: #D92C28;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor{
+    width: 97%;
+    margin: auto;
+}
+
+#avatar_usr img{
+    margin: auto;
+    width: 80px;
+    height: 80px;
+}
+
+#datos_usuario th a{
+    font-family: 'Roboto', sans-serif;
+}
+
+#datos_usuario td a{
+    font-family: 'Roboto', sans-serif;
+}
+
+#datos_usuario td a{
+    color: white;
+}
+
+#datos_usuario th a{
+    font-size: 18px;
+    color: aqua;
+}
+
+#datos_usuario th a:hover, td a:hover{
+    color: #D6D7DB;
+}
+
+#datos_usuario td a:hover{
+    color: #D6D7DB;
+}
+
+#datos_usuario{
+    float: right;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    cursor: pointer;
+}
+
+header .contenedor{
+    display: table;
+}
+
+#btn_find{
+    width: 50px;
+    background-color:#81A635;
+    border-radius: 0px 15px 15px 0px;
+    -webkit-border-radius: 0px 15px 15px 0px;
+    border: 0px solid #000000;
+    margin-left: 170px;
+    margin-top: -20px;
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+#btn_find:hover{
+    background-color: #00994C;
+}
+
+#btn_find:active{
+		background-color:#006633;
+		color:white;
+	}
+
+#find{
+    width: 170px;
+    margin-right: 50px;
+    padding: 5px 10px;
+     border-radius: 0px 15px 15px 0px;
+    -webkit-border-radius: 15px 0px 0px 15px;
+    border: 0px solid #000000;
+}
+
+.buscar{
+    height: 20px;
+}
+
+#busqueda{
+    width: auto;
+    left: 48%;
+    top: 70%;/*40*/
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.box{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    top:0;
+    left:0;
+    background:rgba(0, 0, 0, 0.8);
+    z-index:100;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.box_img{
+    width:45%;
+    max-width:700px;
+    max-height:500px;
+    border: 10px;
+    border-color: black;
+}
+
+.box_boton{
+    width:40px;
+    height:40px;
+    color:#fff;
+    font-weight:bold;
+    font-size:20px;
+    font-family:monospace;
+    line-height:40px;
+    text-align:center;
+    background:red;
+    border-radius:50%;
+    position:absolute;
+    top:40px;
+    right:40px;
+    cursor:pointer;
+}
+	
+.box_boton:hover{
+    background:gray;
+}
+
+@media (min-width:700px){
+    #busqueda{
+        top: 40%;
+    }
+    
+    .buscar{
+        height: 40px;
+    }
+    
+    #btn_find{
+        width: 70px;
+        margin-top: -40px;
+    }
+    
+    .logo{
+       margin-top: 10px;
+    }
+    
+    #slider h3{
+        font-size: 30px;
+    }
+}
+
+@media (min-width:750px){
+    #find{
+        width: 230px;
+    }
+    
+    #btn_find{
+        margin-left: 230px;
+    }
+    
+    .logo{
+        width: 210px;
+    }
+}
+
+@media (min-width:850px){
+    #find{
+        width: 280px;
+    }
+    
+    #btn_find{
+        margin-left: 280px;
+    }
+    
+    .logo{
+        width: 230px;
+    }
+}
+
+@media (min-width:950px){
+    #find{
+        width: 330px;
+    }
+    
+    #btn_find{
+        margin-left: 330px;
+    }
+    
+    .logo{
+        width: 250px;
+        margin-top: 5px;
+    }
+}
+
+@media (min-width:1000px){
+    #find{
+        width: 350px;
+    }
+    
+    #btn_find{
+        margin-left: 350px;
+    }
+    
+    .logo{
+        width: 250px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width:1024px){
+    #datos_usuario{
+        display: none;
+    }
+}
+
+@media (min-width:1024px){
+    #slider{
+        width: 80%;
+    }
+    
+    #find{
+        width: 400px;
+    }
+    
+    #btn_find{
+        margin-left: 400px;
+    }
+    
+    .logo{
+        width: 260px;
+    }
+    
+    .menu{
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+        margin-top: -10px;
+        background-color: #D92C28;
+    }
+    
+    .menu a{
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        height: 35px;
+        padding: 8px;
+        background-color: #D92C28;
+        
+    }
+    
+    #slider{
+        margin-top: 135px;
+    }
+    
+    header label{
+        display: none;
+    }
+}
+
+@media (min-width:1070px){
+    .logo{
+        width: 280px;
+        margin-top: 0;
+    }
+}
+
+.usuario_comentario{
+    font-weight: bold;
+    float: left;
+    padding-right: 10px;
+    margin-left: 10px;
+    font-family: 'Handlee', cursive;
+    color: #5FB404;
+}
+
+.usuario_comentario: hover{
+
+}
+
+.contenido_comentario{
+    
+}
+
+#cuenta{
+    margin-top: 5px;
+    
+    height: 80px;
+    width: 200px;
+    float: right;
+    text-align: right;
+}
+
+#cuenta h4{
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: right;
+    color: #5FB404;
+    font-weight: bold;
+
+}
+
+#cuenta a{
+    color: white;
+}

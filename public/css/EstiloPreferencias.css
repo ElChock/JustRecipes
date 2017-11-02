@@ -1,0 +1,74 @@
+/*------------------------------PREFERENCIAS-----------------------------------*/
+#containPre{
+    background-color: white;
+    height: auto;
+    min-height: 600px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+padding-bottom: 30px;
+}
+
+#containPre > span{
+    font-family: Handlee;
+    font-size: 30pt;
+    margin-top: 5px;
+    color: black;
+    border-bottom: 5px solid;
+    border-bottom-color: gray;
+    
+}
+
+.containPrefe{
+    height: 600px;
+    min-height: 400px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 5%;
+    background-color: white;
+    border: 5px solid gray;
+    border-radius: 7px;
+    text-align: center;
+    margin-bottom: 30px;
+   
+}
+
+section > span{
+    font-size: 12pt;
+    font-family: Courgette;
+    margin:1px;
+    background-color: #81A739;
+    border-radius: 5%;
+    padding: 20px 50px 20px 50px;
+    
+}
+
+.checkbo {
+	width: 25px;
+        margin: 15px 0px 10px 15px;    
+}
+
+input[type=checkbox]{
+   -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+}
+
+.checkbo span{
+    margin-left: 40px;
+     font-family: Courgette;
+     font-size: 13pt;   
+}
+
+.containPrefe .mov{
+    width:220px;
+    float:left;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}

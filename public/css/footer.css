@@ -1,0 +1,18 @@
+.footer{
+    background: #D79F30;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .social [class^=icon-] {
+    display: inline-block;
+    color: #D79F30;
+    text-decoration: none;
+    font-size: 30px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}

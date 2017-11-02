@@ -1,0 +1,124 @@
+
+	#POPformularioRegistro{
+		font-family:Kameron;
+		text-align:center;
+		background-color:white;
+		margin:0 auto;
+		width:450px;
+		height:150px;
+		padding:15px;
+		margin-top:5%;
+		border-radius:7px;
+	}
+	
+	#POPformularioRegistro h2{
+		margin-bottom:20px;
+                font-family: Courgette;
+	}
+	
+	#POPformularioRegistro label.datos{
+		display:block;
+                font-family:Kameron;
+		font-weight:bold;
+                font-size: 20pt;
+		text-align:right;
+		width:140px;
+		float:left;
+                margin: 10px;
+	}
+	
+	#POPformularioRegistro input{
+                padding:10px;
+                width:200px;
+                outline:none;
+                transition: all 0.15s ease-in-out;
+                border-radius:3px;
+                border:1px solid rgba(0,0,0,0.2);
+                background-color: #f6fdfd;
+                margin: 3px;
+	}
+	
+	#POPformularioRegistro .POPbutton{
+		margin:20px 160px auto;
+		width:110px;
+		height:35px;
+		background:#81A739;
+		text-align:center;
+		color:#FFFFFF;
+		font-size:15px;
+		font-weight:bold;
+		box-shadow:0px 1px 1px #000;
+		border-radius:7px;
+	}
+	
+	#POPformularioRegistro .POPbutton:hover{
+		background:#A3D448;
+		color:#FFFFFF;
+	}
+	
+	#POPformularioRegistro .POPbutton:active{
+		background:#0B3861; 
+		color:#FFFFFF;
+	}
+	
+
+/*popup----------------------------------------------------------------------*/
+#popup {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+    display: none;
+}
+
+.content-popup {
+	margin:0px auto;
+	margin-top:120px;
+	position:relative;
+	padding:10px;
+	width:500px;
+	min-height:250px;
+	border-radius:10px;
+	background-color:white;
+	box-shadow: 0 2px 5px #666666;
+        text-align: center;
+}
+
+.content-popup h3 {
+	color:white; 
+        margin-top: 0;
+        padding-bottom: 4px;
+        font-family: Courgette;
+        font-size: 25pt;
+        background-color: #DB3734;
+        border: 10px solid #DB3734;
+        border-radius: 10px 10px 0px 0px;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    margin-top: 2%;
+}
+
+.close a{
+	color:white;
+	}
+
+.close a:hover{
+    color:#ccccff;
+	}
+
+.popup-overlay {
+     left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display:none;
+    background-color: #777777;
+    cursor: pointer;
+    opacity: 0.7;
+}
+	

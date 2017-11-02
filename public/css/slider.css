@@ -1,0 +1,132 @@
+#slider{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 115px;
+    width: 90%;
+    height: 230px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+#ul_slider{
+    display: flex;
+}
+
+h3{
+    padding:5px 5px;
+}
+
+#carousel_container{
+		width:100%;/*900 200*/
+		height:170px;
+		display:flex;
+		margin:0 auto;
+		position:relative;
+	}
+
+#carousel_inner {
+		float:left;
+		width:100%;/*910 160*/
+		height:170px;
+		overflow: hidden;
+		background: #F0F0F0;
+	}
+
+#carousel_ul {
+		position:relative;
+		left:-305px;
+		list-style-type: none; 
+		margin: 0px;
+		padding: 0px;
+		width:9999px;
+		padding-bottom:10px;
+		background: #F0F0F0;
+	}
+
+#carousel_ul li{
+		float: left;                               
+		width:280px;/*280* 150*/
+		padding:0px;
+		height:150px;
+		background: #F0F0F0;
+		margin-top:10px;
+		margin-bottom:10px; 
+		margin-left:8px; 
+		margin-right:8px; 
+	}
+
+#carousel_ul li img {
+		margin-bottom:-4px;
+		cursor:pointer;
+		width:100%;/*280 160*/
+		height:150px;
+		cursor: hand; 
+		border:0px; 	
+	}
+
+#left_scroll, #right_scroll{
+		float:left; 
+		height:130px; 
+		margin:auto;
+		width:20px; 
+		background: #F0F0F0; 
+	}
+
+#left_scroll img{
+		border:0;
+		left:0px;
+		height:170px;
+		position:absolute;
+		margin:auto;
+		top:0px;
+		bottom:0px;
+		cursor: pointer;
+		cursor: hand;
+	}
+
+#right_scroll img{
+    border:0;
+    right:0px;
+    height:170px;
+    margin:auto;
+    top:0px;
+    position:absolute;
+    bottom:0px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slideimg img{
+    -webkit-transition: all 0.5s ease;
+}
+	
+.slideimg img:hover{
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 40px rgba(0,0,153,0.8);
+}
+
+#carousel_ul li:hover div#link{
+    opacity: 1;
+}
+
+#link{
+    opacity: 0;
+    width: 280px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 10px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    -webkit-transition: opacity 0.5s;
+}
+
+#carousel_ul li div a{
+    color: white;
+    font-size: 30px;
+}
+
+#carousel_ul li div a:hover{
+    color: aqua;
+}

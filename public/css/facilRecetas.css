@@ -1,0 +1,81 @@
+#facil_recetas{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 90%;
+    height: 230px;
+    background-color: #81A635;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+#facil_recetas .contenedor ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#facil_recetas .contenedor ul li{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+}
+
+.contenedor>a{
+    font-size: 20px;
+    color: #d6d7db;
+}
+
+.contenedor>a:hover{
+    color: #D6D7DB;
+}
+
+#facil_recetas img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.divertidas{
+    top: 15px;
+    width: 190px;
+    height: 170px;
+    position: relative;
+}
+
+.divertidas_nombre a{
+    color: aqua;
+}
+
+.divertidas_nombre{
+    width: 100%;
+    top: 120px;
+    padding: 5px;
+    text-align: center;
+    background-color:rgba(255, 153, 51, 0.7);
+    position: absolute;
+}
+
+.divertidas_nombre:hover{
+    background-color:rgba(255, 153, 51, 1);
+}
+
+@media (min-width:700px){
+    #facil_recetas{
+        margin-top: 675px;
+    }
+    
+@media (max-width:1024px){
+    #facil_recetas{
+        margin-top: 30px;
+        width: 87%;
+    }
+}
+    
+@media (min-width:1024px){
+    #facil_recetas{
+        width: 80%;
+    }
+}
+

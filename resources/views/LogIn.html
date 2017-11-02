@@ -31,7 +31,7 @@
 
                     <ul class="nav navbar-nav navbar-right">
                         <!-- <li><a href="#">Registrate</a></li> -->
-                        <li><a href="#">Iniciar Sesion</a></li>
+                        <li><a href="#">Registrate</a></li>
                     </ul>
                 </div>
             </nav>
@@ -41,24 +41,21 @@
     <div class="contenedor">
         <div class="container-fluid">
             <div class="main row">
-                <div class="    col-xs-12 col-sm-7 col-md-7 col-lg-6    ">
-                    <div class="descripcion">
-                            <h1>Bienvenido a Just Recipes</h1>
-                            <h3>
-                                Explora y encuentra cientas de recetas de cocina con las que podras probar preparar
-                                gran variedad de platillos y/o comparte tus propias recetas con nuestra comunidad.
-                            </h3>
-                    </div>
+                <div class="    col-xs-12 col-sm-7 col-md-3 col-lg-3    ">
                     
                 </div>
-                <div class="columna        col-xs-12 col-sm-5  col-md-5  col-lg-4 col-lg-offset-1">
+
+
+
+
+                <div class="columna        col-xs-12 col-sm-5  col-md-6  col-lg-4 col-lg-offset-1">
                     <div class="cajaBlanca">
                         <!-- <h3>Aun no formas parte de nuestra comunidad?</h3> -->
                         <div id="logo">
                              <img src="../../public/images/logo.png" width="280px" height="90px">
                         </div>
                         <form id="formularioRegistro" action="Controller/ControllerRegistro.php" method="POST" enctype="multipart/form-data">
-                            <input type="text" required="" name="nombre" id="nombre" placeholder="Nombre de Usuario"/>
+                            
                             <input type="email" required="" name="correo" id="correo" placeholder="Correo Electronico"/>
                             <input type="password" required="" name="password" id="password" placeholder="Contraseña"/>
 

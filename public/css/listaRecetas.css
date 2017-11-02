@@ -1,0 +1,161 @@
+#lista_recetas{
+    background-color: transparent;
+    width: 55%;
+    margin-left: 9.1%;
+    height: 630px;
+    /*border: 1px solid black;*/
+    overflow: auto;
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.icon-circle{
+    color:forestgreen;
+}
+
+#ul_lista_recetas{
+    width: 55%;
+    margin-left: 9.1%;
+    display: flex;  
+}
+
+#ul_facil_recetas{
+    font-size: 20px;
+    padding: 10px;
+    margin-top: -30px;
+    width: 55%;
+    margin-left: 9.1%;
+    text-align: right;
+}
+
+#ul_facil_recetas a{
+    color: #2E2E2E;
+}
+
+#ul_facil_recetas a:hover{
+    color: #5FB404;
+}
+
+.receta{
+    /*height: 200px;*/
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+.receta a{
+    font-size: 25px;
+}
+
+.receta a:hover{
+    color: #5FB404;
+    /*font-size: 28px;*/
+}
+
+.receta td img{
+    padding: 10px;
+    width: 190px;
+    height: 175px;
+}
+
+#calificacion img{
+    padding: 0;
+    height: 25px;
+    width: 130px;
+}
+
+.receta table{
+    margin: auto;
+    height: 100%;
+    width: 98%;
+}
+
+#usuario_receta{
+    color: #DBA901;
+    font-size: 20px;
+}
+
+.receta td hr{
+    border: 0;
+    height: 2px;
+    background-color: #D8D8D8;
+}
+
+#imagen_receta{
+    width: 192px;
+}
+
+#datos{
+    width: 170px;
+}
+
+#datos_receta{
+    width: 145px;
+}
+
+.receta td textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    /*background-color: #e3bc6e;*/
+    resize: none;
+    padding: 8px;
+    font-size: 15px;
+}
+
+@media (max-width:1190px){
+    .receta td textarea{
+        display: none;
+    }
+}
+
+@media (max-width:1024px){
+    #lista_recetas{
+        width: 94%;
+    }
+    
+    #lista_recetas{
+        margin-left: 4%;
+    }
+    
+    #ul_lista_recetas{
+        width: 94%;
+        margin-left: 4%;
+    }
+    
+    #ul_facil_recetas{
+        font-size: 15px;
+        padding-bottom: 20px;
+        width: 94%;
+        margin-left: 4%;
+    }
+    
+    .receta td textarea{
+        display: block;
+    }
+}
+
+@media (max-width:700px){
+    .receta td textarea{
+        display: none;
+    }
+}
+
+@media (max-width:612px){
+    #ocultar{
+        display: none;
+    }
+}
+
+@media (max-width:450px){
+    .receta td a{
+        display: none;
+    }
+}
+
+.receta td img{
+    padding: 10px;
+    width: 206px;
+    height: 180px;
+}
