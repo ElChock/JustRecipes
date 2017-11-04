@@ -8,6 +8,11 @@
     box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.2);
 }
 
+.misRecetas-listas{
+    width: 65% !important;
+    margin-left: 17% !important;
+}
+
 .icon-circle{
     color:forestgreen;
 }
@@ -16,6 +21,10 @@
     width: 55%;
     margin-left: 9.1%;
     display: flex;  
+}
+
+.misRecetas-ul{
+    margin-top: 135px;
 }
 
 #ul_facil_recetas{
