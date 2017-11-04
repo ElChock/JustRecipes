@@ -11,7 +11,8 @@
 
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="/jquery/jquery.js"></script>
         <script src="/jquery/jquery-1.11.3.js"></script>
         <script src="/jquery/jquery-3.1.1.js"></script>
@@ -54,19 +55,19 @@
                         <div id="logo">
                              <img src="/images/logo.png" width="280px" height="90px">
                         </div>
-                        <form id="formularioRegistro" v-on:submit.prevent="login()" method="get" enctype="multipart/form-data">
+                        <form id="formularioRegistro" v-on:submit.prevent="loginUser" method="post" enctype="multipart/form-data">
                             
-                            <input type="email" required="" name="correo" id="correo" placeholder="Correo Electronico"/>
-                            <input type="password" required="" name="password" id="password" placeholder="Contraseña"/>
+                            <input type="email" required="" name="correo" id="correo" placeholder="Correo Electronico"  v-model="usuario.correo" />
+                            <input type="password" required="" name="password" id="password" placeholder="Contraseña"  v-model="usuario.contraseña" />
 
-                            <div class="configuracionImagen">
+                            <!-- <div class="configuracionImagen">
                                 <label for="imagen" id="botonimg"> Imagen de Perfil</label>
                                 <input id="imagen" type="file" name="imagen">
                             </div>
                             <div>
                                 <img id="avatar">
-                            </div>
-                            <input type="submit" name="Registro" class="button" value="Crear Cuenta">
+                            </div> -->
+                            <input type="submit" name="Registro" class="button" value="Iniciar sesion">
                         </form>
                     </div>
                 </div>
@@ -84,5 +85,6 @@
     <script src="/jquery/box.js"></script>
     <script src="/jquery/menu.js"></script>
     <script src="/jquery/javascript.js"></script>
+    <script src="/js/LoginVue.js"></script>
     </body>
 </html>

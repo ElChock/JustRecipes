@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use App\Usuario;
 use Illuminate\Http\Request;
 
@@ -27,7 +27,16 @@ class UsuarioController extends Controller
         //
 
     }
+    public function login(Request $request){
 
+        $user =new Usuario();
+        $users = DB::table('usuarios')->where([
+            ['correo', '=', $request->correo],
+            ['contraseña', '=', $request->contraseña],
+        ])->get();
+        session(['user' => json_encode($user)]);
+        return redirect()->route('inicio');
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -37,20 +46,17 @@ class UsuarioController extends Controller
     public function store(Request $request)
     {
 
-        
-        $user = new Usuario;
-        $user->id="";
-        $user->nombre = $request->nombre;
-        $user->contraseña = $request->contraseña;
-        $user->correo = $request->correo;
-        $user->foto="123";
-        $user->token="123";
-        $user->create_at=123;
-        $user->update_at=123;
-        $create=$user->save();
-        //$user=Usuario::all();
-        //$create = Usuario::create($user);
-    	return  response()->json($create);
+            $user = new Usuario;
+            $user->id=0;
+            $user->nombre = $request->nombre;
+            $user->contraseña = $request->contraseña;
+            $user->correo = $request->correo;
+            $user->foto="foto";
+            $user->token="";
+            $create=$user->save();
+            //$user=Usuario::all();
+            //$create = Usuario::create($user);
+            return  response()->json($create);
 
     }
 

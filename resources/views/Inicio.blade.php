@@ -17,6 +17,7 @@
         <script language="javascript" type="text/javascript" src="/js/Inicio.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/POP.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/RecetasRemondadas.js"></script>
+        
     </head>
     <body>
     <header>

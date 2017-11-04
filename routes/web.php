@@ -36,6 +36,7 @@ Route::get("/mostrarReceta",function(){
 
 Route::post("/vueUser","UsuarioController@store");
 
+Route::post("/vueLogin","UsuarioController@login");
 
 
 // Route::resource("vueUser","UsuarioController");
