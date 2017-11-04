@@ -30,12 +30,15 @@ class UsuarioController extends Controller
     public function login(Request $request){
 
         $user =new Usuario();
-        $users = DB::table('usuarios')->where([
+        $user = DB::table('usuarios')->where([
             ['correo', '=', $request->correo],
             ['contraseña', '=', $request->contraseña],
         ])->get();
         session(['user' => json_encode($user)]);
-        return redirect()->route('inicio');
+        //return ['redirect' => route('training_schedules.index')];
+        //return ['redirect' => redirect('inicio')];
+        return redirect('inicio');
+
     }
     /**
      * Store a newly created resource in storage.

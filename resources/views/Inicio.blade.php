@@ -13,11 +13,12 @@
         <script language="javascript" type="text/javascript" src="/jquery/jquery.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/jquery-1.11.3.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/jquery-3.1.1.js"></script>
-        
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script language="javascript" type="text/javascript" src="/js/Inicio.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/POP.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/RecetasRemondadas.js"></script>
-        
+
     </head>
     <body>
     <header>
@@ -43,7 +44,7 @@
 
                 <div id="cuenta">
                     <div style="float: left;">
-                        <h4>Abraham</h4>
+                        <h4 >@{{usuarioLogin}}</h4>
                         <h4><a href="">Cerrar Sesion</a></h4>
                     </div>
                     <div style="float: right; ">
@@ -480,5 +481,6 @@
     <script src="/jquery/box.js"></script>
     <script src="/jquery/menu.js"></script>
     <script src="/jquery/javascript.js"></script>
+    <script src="/js/LoginVue.js"></script>
     </body>
 </html>
