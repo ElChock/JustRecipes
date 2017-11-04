@@ -8,80 +8,75 @@ var receta;
 var ingredientes;
 var pasos;
 var idReceta;
-$(document).ready(function()
-{
-    idReceta=$.get("idReceta");
+$(document).ready(function() {
+    idReceta = $.get("idReceta");
     obtenerPasos();
     obtenerReceta();
     OntenerIngredientes();
-    if(receta.tiempoHoras==null)
-        {
-            receta.tiempoHoras=0;
-        }
-    if(receta.tiempoMinutos==null)
-        {
-            receta.tiempoMinutos=0;
-        }
+    if (receta.tiempoHoras == null) {
+        receta.tiempoHoras = 0;
+    }
+    if (receta.tiempoMinutos == null) {
+        receta.tiempoMinutos = 0;
+    }
     ImprimirReceta();
-    
+
 });
 
-function obtenerReceta() 
-{
-        $.ajax({
-        type:"get",
-        url:"http://54.191.0.0/justRecipes/Controller/controllerRecetas.php?idReceta="+idReceta,
-        async:false,
-        contentType: "application/json; charset=utf-8",
-        dataType: 'json',
-        success:function(data)
-            {
-                receta=data;               
-            }
-        });   
+function obtenerReceta() {
+    // $.ajax({
+    // type:"get",
+    // url:"http://54.191.0.0/justRecipes/Controller/controllerRecetas.php?idReceta="+idReceta,
+    // async:false,
+    // contentType: "application/json; charset=utf-8",
+    // dataType: 'json',
+    // success:function(data)
+    //     {
+    //         receta=data;               
+    //     }
+    // });   
 }
-function OntenerIngredientes() 
-{
-        $.ajax({
-        type:"get",
-        url:"http://54.191.0.0/justRecipes/Controller/controllerRecetas.php?Ingredientes="+idReceta,
-        async:false,
-        contentType: "application/json; charset=utf-8",
-        dataType: 'json',
-        success:function(data)
-            {
-                ingredientes=data;               
-            }
-        });     
+
+function OntenerIngredientes() {
+    // $.ajax({
+    // type:"get",
+    // url:"http://54.191.0.0/justRecipes/Controller/controllerRecetas.php?Ingredientes="+idReceta,
+    // async:false,
+    // contentType: "application/json; charset=utf-8",
+    // dataType: 'json',
+    // success:function(data)
+    //     {
+    //         ingredientes=data;               
+    //     }
+    // });     
 }
-function obtenerPasos() 
-{
-        $.ajax({
-        type:"get",
-        url:"http://54.191.0.0/justRecipes/Controller/controllerRecetas.php?Pasos="+idReceta,
-        async:false,
-        contentType: "application/json; charset=utf-8",
-        dataType: 'json',
-        success:function(data)
-            {
-                pasos=data;               
-            }
-        });     
+
+function obtenerPasos() {
+    // $.ajax({
+    // type:"get",
+    // url:"http://54.191.0.0/justRecipes/Controller/controllerRecetas.php?Pasos="+idReceta,
+    // async:false,
+    // contentType: "application/json; charset=utf-8",
+    // dataType: 'json',
+    // success:function(data)
+    //     {
+    //         pasos=data;               
+    //     }
+    // });     
 }
-function ImprimirReceta()
-{
+
+function ImprimirReceta() {
     var ingredientesImprimir;
     var pasosImprimir
-    for(index=1;index<ingredientes.length;index++)
-    {
-        ingredientesImprimir+="<tr><td><textarea name id= readonly>"+ingredientes[index].nombre+"</textarea></td></tr>";
+    for (index = 1; index < ingredientes.length; index++) {
+        ingredientesImprimir += "<tr><td><textarea name id= readonly>" + ingredientes[index].nombre + "</textarea></td></tr>";
     }
-   /* for(index=0;index<pasos.length;index++)
-    {
-        pasosImprimir+="<tr><td><textarea name id= readonly>"+pasos[index].descripcion+"</textarea></td></tr>";
-    }*/
-    
-    $ (".Recetaimprimir").append("<div class=contenedor>\n\
+    /* for(index=0;index<pasos.length;index++)
+     {
+         pasosImprimir+="<tr><td><textarea name id= readonly>"+pasos[index].descripcion+"</textarea></td></tr>";
+     }*/
+
+    $(".Recetaimprimir").append("<div class=contenedor>\n\
                 <div class=mostrar>\n\
                    <table>\n\
                         <tr>\n\
@@ -116,22 +111,22 @@ function ImprimirReceta()
                         </td>\n\
                     </tr>\n\
                     <tr>\n\
-                        <th colspan=5><h3>"+receta.nombre+"</h3></th>\n\
+                        <th colspan=5><h3>" + receta.nombre + "</h3></th>\n\
                     </tr>\n\
                     <tr>\n\
                         <td class=handlee_font id=tam_mostrar_datos >Tiémpo de Preparación: </td>\n\
-                        <td class=roboto_font id=tam_mostrar_datos2>"+receta.tiempoHoras+"</td>\n\
+                        <td class=roboto_font id=tam_mostrar_datos2>" + receta.tiempoHoras + "</td>\n\
                         <td class=handlee_font id=padd_time>hóra</td>\n\
-                        <td class=roboto_font id=padd_time>"+receta.tiempoMinutos+"</td>\n\
+                        <td class=roboto_font id=padd_time>" + receta.tiempoMinutos + "</td>\n\
                         <td class=handlee_font >min</td>\n\
                     </tr>\n\
                     <tr>\n\
                         <td class=handlee_font id=tam_mostrar_datos>Dificultad: </td>\n\
-                        <td colspan=4 class=roboto_font id=padd>"+receta.dificultad+"</td>\n\
+                        <td colspan=4 class=roboto_font id=padd>" + receta.dificultad + "</td>\n\
                     </tr>\n\
                     <tr>\n\
                         <td class=handlee_font id=tam_mostrar_datos>Porciónes: </td>\n\
-                        <td class=roboto_font id=tam_mostrar_datos2>"+receta.porciones+"</td>\n\
+                        <td class=roboto_font id=tam_mostrar_datos2>" + receta.porciones + "</td>\n\
                     </tr>\n\
                     <tr>\n\
                 </table>\n\
@@ -145,7 +140,7 @@ function ImprimirReceta()
                         <tr>\n\
                             <th><h3>Ingredientes</h3></th>\n\
                         </tr>\n\
-                            "+ingredientesImprimir+"\n\
+                            " + ingredientesImprimir + "\n\
                     </table>\n\
                 </div>\n\
             </div>\n\
@@ -166,18 +161,18 @@ function ImprimirReceta()
         </section>");
 }
 
-(function($) {  
-    $.get = function(key)   {  
-        key = key.replace(/[\[]/, '\\[');  
-        key = key.replace(/[\]]/, '\\]');  
-        var pattern = "[\\?&]" + key + "=([^&#]*)";  
-        var regex = new RegExp(pattern);  
-        var url = unescape(window.location.href);  
-        var results = regex.exec(url);  
-        if (results === null) {  
-            return null;  
-        } else {  
-            return results[1];  
-        }  
-    }  
-})(jQuery);  
+(function($) {
+    $.get = function(key) {
+        key = key.replace(/[\[]/, '\\[');
+        key = key.replace(/[\]]/, '\\]');
+        var pattern = "[\\?&]" + key + "=([^&#]*)";
+        var regex = new RegExp(pattern);
+        var url = unescape(window.location.href);
+        var results = regex.exec(url);
+        if (results === null) {
+            return null;
+        } else {
+            return results[1];
+        }
+    }
+})(jQuery);

@@ -1,28 +1,28 @@
-$(document).ready(function(){
-    $("#icono").click(function(){
-       $("#tabla tbody tr:eq(0)").clone().removeClass('fila_base').appendTo("#tabla tbody");
+$(document).ready(function() {
+    $("#icono").click(function() {
+        $("#tabla tbody tr:eq(0)").clone().removeClass('fila_base').appendTo("#tabla tbody");
     });
-    $(document).on("click", "#icono_cancel",function(){
+    $(document).on("click", "#icono_cancel", function() {
         var parent = $(this).parents().get(0);
         $(parent).remove();
     });
 });
 
-$(document).ready(function(){
-    $("#icono_pasos").click(function(){
-       $("#tabla_pasos tbody tr:eq(0)").clone().removeClass('fila_base_pasos').appendTo("#tabla_pasos tbody");
+$(document).ready(function() {
+    $("#icono_pasos").click(function() {
+        $("#tabla_pasos tbody tr:eq(0)").clone().removeClass('fila_base_pasos').appendTo("#tabla_pasos tbody");
     });
-    $(document).on("click", "#icono_cancel_pasos",function(){
+    $(document).on("click", "#icono_cancel_pasos", function() {
         var parent = $(this).parents().get(0);
         $(parent).remove();
     });
 });
 
-$(document).ready(function(){
-    $("#icono_etiqueta").click(function(){
-       $("#tabla_etiqueta tbody tr:eq(0)").clone().removeClass('fila_base_etiqueta').appendTo("#tabla_etiqueta tbody");
+$(document).ready(function() {
+    $("#icono_etiqueta").click(function() {
+        $("#tabla_etiqueta tbody tr:eq(0)").clone().removeClass('fila_base_etiqueta').appendTo("#tabla_etiqueta tbody");
     });
-    $(document).on("click", "#icono_cancel_etiqueta",function(){
+    $(document).on("click", "#icono_cancel_etiqueta", function() {
         var parent = $(this).parents().get(0);
         $(parent).remove();
     });
@@ -41,4 +41,3 @@ $(document).ready(function(){
        $(parent).remove();
     });
 });*/
-

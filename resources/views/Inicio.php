@@ -4,24 +4,24 @@
         <meta charset="UTF-8">
         <title>Inico</title>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href="../../public/css/EstilosInicio.css">
-        <link rel="stylesheet" href="../../public/css/EstilosInicioNL.css">
+        <link rel="stylesheet" href="/css/EstilosInicio.css">
+        <link rel="stylesheet" href="/css/EstilosInicioNL.css">
         <link href="https://fonts.googleapis.com/css?family=Courgette|Handlee|Kameron" rel="stylesheet"> 
-        <link rel="stylesheet" href="../../public/css/fontello.css">
-        <link rel="stylesheet" type="text/css" href="../../public/css/EstiloSesion.css" />
+        <link rel="stylesheet" href="/css/fontello.css">
+        <link rel="stylesheet" type="text/css" href="/css/EstiloSesion.css" />
         
-        <script language="javascript" type="text/javascript" src="../../public/jquery/jquery.js"></script>
-        <script language="javascript" type="text/javascript" src="../../public/jquery/jquery-1.11.3.js"></script>
-        <script language="javascript" type="text/javascript" src="../../public/jquery/jquery-3.1.1.js"></script>
+        <script language="javascript" type="text/javascript" src="/jquery/jquery.js"></script>
+        <script language="javascript" type="text/javascript" src="/jquery/jquery-1.11.3.js"></script>
+        <script language="javascript" type="text/javascript" src="/jquery/jquery-3.1.1.js"></script>
         
-        <script language="javascript" type="text/javascript" src="../../public/js/Inicio.js"></script>
-        <script language="javascript" type="text/javascript" src="../../public/jquery/POP.js"></script>
-        <script language="javascript" type="text/javascript" src="../../public/jquery/RecetasRemondadas.js"></script>
+        <script language="javascript" type="text/javascript" src="/js/Inicio.js"></script>
+        <script language="javascript" type="text/javascript" src="/jquery/POP.js"></script>
+        <script language="javascript" type="text/javascript" src="/jquery/RecetasRemondadas.js"></script>
     </head>
     <body>
     <header>
             <div class="contenedor" id="headerRegistro">
-                <img src="../../public/imagenes/logo16.png" class="logo" height="80px;" alt="">
+                <img src="/imagenes/logo16.png" class="logo" height="80px;" alt="">
                 <input type="checkbox" id="menu_bar">
                 <form action="">
                     <div id="busqueda">
@@ -46,7 +46,7 @@
                         <h4><a href="">Cerrar Sesion</a></h4>
                     </div>
                     <div style="float: right; ">
-                        <img src="../../public/imagenes/usuario.png" width="70px" height="70px">
+                        <img src="/imagenes/usuario.png" width="70px" height="70px">
                     </div>
                     
                 </div>
@@ -66,42 +66,42 @@
                     <li><h3>Recetas de la Semana</h3></li>
                 </ul>    
                 <div id='carousel_container' class="slideimg">
-                    <div id='left_scroll'><a href='javascript:slide("left");'><img src='../../public/imagenes/left.png' /></a></div>
+                    <div id='left_scroll'><a href='javascript:slide("left");'><img src='/imagenes/left.png' /></a></div>
                         <div id='carousel_inner'>
                             <ul id='carousel_ul'>
-                                <li><img class="box_comida" src='../../public/imagenes/pizza.jpg' />
+                                <li><img class="box_comida" src='/imagenes/pizza.jpg' />
                                 <div id="link"><a href="#">Pizza</a></div>
                                 </li>
-                                <li><img class="box_comida" src='../../public/imagenes/tacos.jpg' />
+                                <li><img class="box_comida" src='/imagenes/tacos.jpg' />
                                 <div id="link"><a href="#">Tacos de Trompo</a></div>
                                 </li>
-                                <li><img class="box_comida" src='../../public/imagenes/niidea.jpg' />
+                                <li><img class="box_comida" src='/imagenes/niidea.jpg' />
                                 <div id="link"><a href="#">Pollo</a></div>
                                 </li>
-                                <li><img class="box_comida" src='../../public/imagenes/queso.jpg' />
+                                <li><img class="box_comida" src='/imagenes/queso.jpg' />
                                 <div id="link"><a href="#">Queso</a></div>
                                 </li>
-                                <li><img class="box_comida" src='../../public/imagenes/loquesea.jpg' />
+                                <li><img class="box_comida" src='/imagenes/loquesea.jpg' />
                                 <div id="link"><a href="#">Ensalada</a></div>
                                 </li>
-                                <li><img class="box_comida" src='../../public/imagenes/pizza.jpg' />
+                                <li><img class="box_comida" src='/imagenes/pizza.jpg' />
                                 <div id="link"><a href="#">Pizza</a></div>
                                 </li>
-                                <li><img class="box_comida" src='../../public/imagenes/tacos.jpg' />
+                                <li><img class="box_comida" src='/imagenes/tacos.jpg' />
                                 <div id="link"><a href="#">Tacos</a></div>
                                 </li>
-                                <li><img class="box_comida" src='../../public/imagenes/niidea.jpg' />
+                                <li><img class="box_comida" src='/imagenes/niidea.jpg' />
                                 <div id="link"><a href="#">Pechuga de Pollo</a></div>
                                 </li>
-                                <li><img class="box_comida" src='../../public/imagenes/queso.jpg' />
+                                <li><img class="box_comida" src='/imagenes/queso.jpg' />
                                 <div id="link"><a href="#">Queso</a></div>
                                 </li>
-                                <li><img class="box_comida" src='../../public/imagenes/loquesea.jpg' />
+                                <li><img class="box_comida" src='/imagenes/loquesea.jpg' />
                                 <div id="link"><a href="#">Sopa</a></div>
                                 </li>
                             </ul>
                         </div>
-                    <div id='right_scroll'><a href='javascript:slide("right");'><img src='../../public/imagenes/right.png' /></a></div>
+                    <div id='right_scroll'><a href='javascript:slide("right");'><img src='/imagenes/right.png' /></a></div>
                     <input type='hidden' id='hidden_auto_slide_seconds' value=0 />
                 </div>
             </div>
@@ -130,7 +130,7 @@
                 <div class="receta">
                     <table cellspacing="5">
                         <tr>
-                            <td rowspan="7" id="imagen_receta" ><img src="../../public/imagenes/pizza.jpg" alt=""></td>
+                            <td rowspan="7" id="imagen_receta" ><img src="/imagenes/pizza.jpg" alt=""></td>
                             <td colspan="2"><a href="#">PIZZA</a></td>
                         </tr>
                         <tr id="ocultar">
@@ -150,7 +150,7 @@
                             <td class="roboto_font">Média</td>
                         </tr>
                         <tr id="ocultar">
-                            <td id="calificacion" colspan="2"><img src="../../public/imagenes/calificacion.png" alt=""></td>
+                            <td id="calificacion" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
                         </tr>
                         <tr id="ocultar">
                             <td class="handlee_font">Receta por:</td>
@@ -178,7 +178,7 @@
                 <div class="receta">
                     <table cellspacing="5">
                         <tr>
-                            <td rowspan="7" id="imagen_receta" ><img src="../../public/imagenes/pizza.jpg" alt=""></td>
+                            <td rowspan="7" id="imagen_receta" ><img src="/imagenes/pizza.jpg" alt=""></td>
                             <td colspan="2"><a href="#">PIZZA</a></td>
                         </tr>
                         <tr id="ocultar">
@@ -198,7 +198,7 @@
                             <td class="roboto_font">Média</td>
                         </tr>
                         <tr id="ocultar">
-                            <td id="calificacion" colspan="2"><img src="../../public/imagenes/calificacion.png" alt=""></td>
+                            <td id="calificacion" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
                         </tr>
                         <tr id="ocultar">
                             <td class="handlee_font">Receta por:</td>
@@ -227,7 +227,7 @@
                 <div class="receta">
                     <table cellspacing="5">
                         <tr>
-                            <td rowspan="7" id="imagen_receta" ><img src="../../public/imagenes/pizza.jpg" alt=""></td>
+                            <td rowspan="7" id="imagen_receta" ><img src="/imagenes/pizza.jpg" alt=""></td>
                             <td colspan="2"><a href="#">PIZZA</a></td>
                         </tr>
                         <tr id="ocultar">
@@ -247,7 +247,7 @@
                             <td class="roboto_font">Média</td>
                         </tr>
                         <tr id="ocultar">
-                            <td id="calificacion" colspan="2"><img src="../../public/imagenes/calificacion.png" alt=""></td>
+                            <td id="calificacion" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
                         </tr>
                         <tr id="ocultar">
                             <td class="handlee_font">Receta por:</td>
@@ -310,7 +310,7 @@
                 <div class="top">
                     <table cellspacing="0">
                         <tr>
-                            <td rowspan="3" id="imagen_top_receta" class="separador"><img class="box_comida" src="../../public/imagenes/rollos.jpg" alt=""></td>
+                            <td rowspan="3" id="imagen_top_receta" class="separador"><img class="box_comida" src="/imagenes/rollos.jpg" alt=""></td>
                             <td colspan="2"><a href="#">Rollitos</a></td>
                         </tr>
                         <tr>
@@ -318,11 +318,11 @@
                             <td class="roboto_font" id="usuario_receta">Jovy</td>
                         </tr>
                         <tr>
-                            <td id="calificacion" class="separador" colspan="2"><img src="../../public/imagenes/calificacion.png" alt=""></td>
+                            <td id="calificacion" class="separador" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
                         </tr>
                         
                         <tr>
-                            <td rowspan="3" id="imagen_top_receta" class="separador"><img class="box_comida" src="../../public/imagenes/pizza.jpg" alt=""></td>
+                            <td rowspan="3" id="imagen_top_receta" class="separador"><img class="box_comida" src="/imagenes/pizza.jpg" alt=""></td>
                             <td colspan="2"><a href="#">Pizza</a></td>
                         </tr>
                         <tr>
@@ -330,11 +330,11 @@
                             <td class="roboto_font" id="usuario_receta">Jovy</td>
                         </tr>
                         <tr>
-                            <td id="calificacion" class="separador" colspan="2"><img src="../../public/imagenes/calificacion.png" alt=""></td>
+                            <td id="calificacion" class="separador" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
                         </tr>
                         
                         <tr>
-                            <td rowspan="3" id="imagen_top_receta" class="separador"><img class="box_comida" src="../../public/imagenes/ensalada.jpg" alt=""></td>
+                            <td rowspan="3" id="imagen_top_receta" class="separador"><img class="box_comida" src="/imagenes/ensalada.jpg" alt=""></td>
                             <td colspan="2"><a href="#">Ensalada de pollo</a></td>
                         </tr>
                         <tr>
@@ -342,11 +342,11 @@
                             <td class="roboto_font" id="usuario_receta">Jovy</td>
                         </tr>
                         <tr>
-                            <td id="calificacion" class="separador" colspan="2"><img src="../../public/imagenes/calificacion.png" alt=""></td>
+                            <td id="calificacion" class="separador" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
                         </tr>
                         
                         <tr>
-                            <td rowspan="3" id="imagen_top_receta" class="separador"><img class="box_comida" src="../../public/imagenes/queso.jpg" alt=""></td>
+                            <td rowspan="3" id="imagen_top_receta" class="separador"><img class="box_comida" src="/imagenes/queso.jpg" alt=""></td>
                             <td colspan="2"><a href="#">Queso</a></td>
                         </tr>
                         <tr>
@@ -354,11 +354,11 @@
                             <td class="roboto_font" id="usuario_receta">Jovy</td>
                         </tr>
                         <tr>
-                            <td id="calificacion" class="separador" colspan="2"><img src="../../public/imagenes/calificacion.png" alt=""></td>
+                            <td id="calificacion" class="separador" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
                         </tr>
                         
                         <tr>
-                            <td rowspan="3" id="imagen_top_receta" class="separador"><img class="box_comida" src="../../public/imagenes/tacos.jpg" alt=""></td>
+                            <td rowspan="3" id="imagen_top_receta" class="separador"><img class="box_comida" src="/imagenes/tacos.jpg" alt=""></td>
                             <td colspan="2"><a href="#">Tácos de Trompo</a></td>
                         </tr>
                         <tr>
@@ -366,7 +366,7 @@
                             <td class="roboto_font" id="usuario_receta">Jovy</td>
                         </tr>
                         <tr>
-                            <td id="calificacion" class="separador" colspan="2"><img src="../../public/imagenes/calificacion.png" alt=""></td>
+                            <td id="calificacion" class="separador" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
                         </tr>
                     </table>
                 </div>
@@ -388,7 +388,7 @@
                <ul>
                <li>
                 <div class="divertidas">
-                   <img src="../../public/imagenes/galletas.jpg" alt="">
+                   <img src="/imagenes/galletas.jpg" alt="">
                    <div class="divertidas_nombre">
                        <a href="#">Galletas de Mantequilla</a>
                    </div>
@@ -396,7 +396,7 @@
                 </li>
                 <li>
                 <div class="divertidas">
-                   <img src="../../public/imagenes/margarita.jpg" alt="">
+                   <img src="/imagenes/margarita.jpg" alt="">
                    <div class="divertidas_nombre">
                        <a href="#">Margarita con Chamoy</a>
                    </div>
@@ -404,7 +404,7 @@
                 </li>
                 <li>
                 <div class="divertidas">
-                   <img src="../../public/imagenes/niidea.jpg" alt="">
+                   <img src="/imagenes/niidea.jpg" alt="">
                    <div class="divertidas_nombre">
                        <a href="#">Pollo</a>
                    </div>
@@ -412,7 +412,7 @@
                 </li>
                 <li>
                 <div class="divertidas">
-                   <img src="../../public/imagenes/loquesea.jpg" alt="">
+                   <img src="/imagenes/loquesea.jpg" alt="">
                    <div class="divertidas_nombre">
                        <a href="#">Fideos</a>
                    </div>
@@ -420,7 +420,7 @@
                 </li>
                 <li>
                 <div class="divertidas">
-                   <img src="../../public/imagenes/taza.jpg" alt="">
+                   <img src="/imagenes/taza.jpg" alt="">
                    <div class="divertidas_nombre">
                        <a href="#">Coditos con quéso y tomate</a>
                    </div>
@@ -476,8 +476,8 @@
         </div>
         <p class="copy">&copy; JustRecipes. Todos los Derechos Reservados</p>
     </footer>
-    <script src="../../public/jquery/box.js"></script>
-    <script src="../../public/jquery/menu.js"></script>
-    <script src="../../public/jquery/javascript.js"></script>
+    <script src="/jquery/box.js"></script>
+    <script src="/jquery/menu.js"></script>
+    <script src="/jquery/javascript.js"></script>
     </body>
 </html>

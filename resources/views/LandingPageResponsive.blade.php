@@ -3,29 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <title>Registro</title>
+        <meta id="token" name="token" value="{{ csrf_token() }}">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimum-scale=1.0">
        <!--  <link rel="stylesheet" href="css/EstilosInicioNew.css">
         <link rel="stylesheet" href="css/RegistroNew.css"> -->
 
-        <link rel="stylesheet" href="../../public/css/LandingPageResponsive.css">
-
-        <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="/css/LandingPageResponsive.css">
         
-        <script src="../../public/jquery/jquery.js"></script>
-        <script src="../../public/jquery/jquery-1.11.3.js"></script>
-        <script src="../../public/jquery/jquery-3.1.1.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+        <script src="https://unpkg.com/vue"></script>
+        <script src="/jquery/jquery.js"></script>
+        <script src="/jquery/jquery-3.1.1.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        
     </head>
     <body >
-        <img class="testBody" src="../../public/imagenes/JustRecipesBack.jpg" width="1380px" height="720px" alt="background image">
+        <img class="testBody" src="/imagenes/JustRecipesBack.jpg" width="1380px" height="720px" alt="background image">
+
         <header>
-            
             <nav class="navbar navbar-inverse Navegacion">
                 <div class="container-fluid">
 
                         <div class="navbar-header">
                                 <a class="navbar-brand" href="#">
-                                        <img class="logoNav" src="../../public/images/logo.png" width="200px" height="65px">
+                                        <img class="logoNav" src="/images/logo.png" width="200px" height="65px">
                                 </a>
                         </div>
 
@@ -51,16 +52,16 @@
                     </div>
                     
                 </div>
-                <div class="columna        col-xs-12 col-sm-5  col-md-5  col-lg-4 col-lg-offset-1">
-                    <div class="cajaBlanca">
+                <div class="columna col-xs-12 col-sm-5  col-md-5  col-lg-4 col-lg-offset-1">
+                    <div class="cajaBlanca" id="AltaUsuario">
                         <!-- <h3>Aun no formas parte de nuestra comunidad?</h3> -->
                         <div id="logo">
-                             <img src="../../public/images/logo.png" width="280px" height="90px">
+                             <img src="/images/logo.png" width="280px" height="90px">
                         </div>
-                        <form id="formularioRegistro" action="Controller/ControllerRegistro.php" method="POST" enctype="multipart/form-data">
-                            <input type="text" required="" name="nombre" id="nombre" placeholder="Nombre de Usuario"/>
-                            <input type="email" required="" name="correo" id="correo" placeholder="Correo Electronico"/>
-                            <input type="password" required="" name="password" id="password" placeholder="Contraseña"/>
+                        <form id="formularioRegistro"  v-on:submit.prevent="createUser"  method="POST" enctype="multipart/form-data">
+                            <input type="text" required="" name="nombre" id="nombre" placeholder="Nombre de Usuario"  v-model="usuario.nombre"  />
+                            <input type="email" required="" name="correo" id="correo" placeholder="Correo Electronico"  v-model="usuario.correo"  />
+                            <input type="password" required="" name="password" id="password" placeholder="Contraseña"  v-model="usuario.contraseña" />
 
                             <div class="configuracionImagen">
                                 <label for="imagen" id="botonimg"> Imagen de Perfil</label>
@@ -70,6 +71,7 @@
                                 <img id="avatar">
                             </div>
                             <input type="submit" name="Registro" class="button" value="Crear Cuenta">
+                            <span id="error" >@{{message}}</span>
                         </form>
                     </div>
                 </div>
@@ -83,19 +85,10 @@
 
     </div>
 
-        
-  
-    
-
-
-    
-
-
-
-    
-    <script src="../../public/jquery/Registro.js"></script>
-    <script src="../../public/jquery/box.js"></script>
-    <script src="../../public/jquery/menu.js"></script>
-    <script src="../../public/jquery/javascript.js"></script>
+    <script src="/jquery/Registro.js"></script>
+    <script src="/jquery/box.js"></script>
+    <script src="/jquery/menu.js"></script>
+    <script src="/jquery/javascript.js"></script>
+    <script src="/js/UsuarioVue.js"></script>
     </body>
 </html>

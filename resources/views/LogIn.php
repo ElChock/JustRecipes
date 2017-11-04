@@ -7,17 +7,17 @@
        <!--  <link rel="stylesheet" href="css/EstilosInicioNew.css">
         <link rel="stylesheet" href="css/RegistroNew.css"> -->
 
-        <link rel="stylesheet" href="../../public/css/LandingPageResponsive.css">
+        <link rel="stylesheet" href="/css/LandingPageResponsive.css">
 
-        <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         
-        <script src="../../public/jquery/jquery.js"></script>
-        <script src="../../public/jquery/jquery-1.11.3.js"></script>
-        <script src="../../public/jquery/jquery-3.1.1.js"></script>
+        <script src="/jquery/jquery.js"></script>
+        <script src="/jquery/jquery-1.11.3.js"></script>
+        <script src="/jquery/jquery-3.1.1.js"></script>
     </head>
     <body >
-        <img class="testBody" src="../../public/imagenes/JustRecipesBack.jpg" width="1380px" height="720px" opac>
+        <img class="testBody" src="/imagenes/JustRecipesBack.jpg" width="1380px" height="720px" opac>
         <header>
             
             <nav class="navbar navbar-inverse Navegacion">
@@ -25,7 +25,7 @@
 
                         <div class="navbar-header">
                                 <a class="navbar-brand" href="#">
-                                        <img class="logoNav" src="../../public/images/logo.png" width="200px" height="65px">
+                                        <img class="logoNav" src="/images/logo.png" width="200px" height="65px">
                                 </a>
                         </div>
 
@@ -52,9 +52,9 @@
                     <div class="cajaBlanca">
                         <!-- <h3>Aun no formas parte de nuestra comunidad?</h3> -->
                         <div id="logo">
-                             <img src="../../public/images/logo.png" width="280px" height="90px">
+                             <img src="/images/logo.png" width="280px" height="90px">
                         </div>
-                        <form id="formularioRegistro" action="Controller/ControllerRegistro.php" method="POST" enctype="multipart/form-data">
+                        <form id="formularioRegistro" v-on:submit.prevent="login()" method="get" enctype="multipart/form-data">
                             
                             <input type="email" required="" name="correo" id="correo" placeholder="Correo Electronico"/>
                             <input type="password" required="" name="password" id="password" placeholder="Contraseña"/>
@@ -79,20 +79,10 @@
         </div>
 
     </div>
-
-        
-  
     
-
-
-    
-
-
-
-    
-    <script src="../../public/jquery/Registro.js"></script>
-    <script src="../../public/jquery/box.js"></script>
-    <script src="../../public/jquery/menu.js"></script>
-    <script src="../../public/jquery/javascript.js"></script>
+    <script src="/jquery/Registro.js"></script>
+    <script src="/jquery/box.js"></script>
+    <script src="/jquery/menu.js"></script>
+    <script src="/jquery/javascript.js"></script>
     </body>
 </html>

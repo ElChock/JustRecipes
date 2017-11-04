@@ -25,6 +25,7 @@ class UsuarioController extends Controller
     public function create()
     {
         //
+
     }
 
     /**
@@ -35,7 +36,22 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        
+        $user = new Usuario;
+        $user->id="";
+        $user->nombre = $request->nombre;
+        $user->contraseña = $request->contraseña;
+        $user->correo = $request->correo;
+        $user->foto="123";
+        $user->token="123";
+        $user->create_at=123;
+        $user->update_at=123;
+        $create=$user->save();
+        //$user=Usuario::all();
+        //$create = Usuario::create($user);
+    	return  response()->json($create);
+
     }
 
     /**

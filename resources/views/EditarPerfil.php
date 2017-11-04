@@ -4,18 +4,18 @@
         <meta charset="UTF-8">
         <title>Mi Perfil</title>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href="../../public/css/EstilosInicio.css">
-        <link rel="stylesheet" href="../../public/css/Registro.css">
-        <link rel="stylesheet" href="../../public/css/fontello.css">
-        <link rel="stylesheet" href="../../public/css/Perfil.css">
-        <script src="../../public/jquery/jquery.js"></script>
-        <script src="../../public/jquery/jquery-1.11.3.js"></script>
-        <script src="../../public/jquery/jquery-3.1.1.js"></script>
+        <link rel="stylesheet" href="/css/EstilosInicio.css">
+        <link rel="stylesheet" href="/css/Registro.css">
+        <link rel="stylesheet" href="/css/fontello.css">
+        <link rel="stylesheet" href="/css/Perfil.css">
+        <script src="/jquery/jquery.js"></script>
+        <script src="/jquery/jquery-1.11.3.js"></script>
+        <script src="/jquery/jquery-3.1.1.js"></script>
     </head>
     <body>
     <header>
         <div class="contenedor">
-            <img src="../../public/imagenes/logo16.png" class="logo" height="80px" alt="">
+            <img src="/imagenes/logo16.png" class="logo" height="80px" alt="">
             <input type="checkbox" id="menu_bar">
             <label class="icon-menu" for="menu_bar"></label>
             <form action="">
@@ -42,7 +42,7 @@
                         <h4><a href="">Cerrar Sesion</a></h4>
                     </div>
                     <div style="float: right; ">
-                        <img src="../../public/imagenes/usuario.png" width="70px" height="70px">
+                        <img src="/imagenes/usuario.png" width="70px" height="70px">
                     </div>
                     
                 </div>
@@ -73,9 +73,9 @@
         </div>
     </section>
     </main>
-    <script src="../../public/jquery/Registro.js"></script>
-    <script src="../../public/jquery/box.js"></script>
-    <script src="../../public/jquery/menu.js"></script>
-    <script src="../../public/jquery/javascript.js"></script>
+    <script src="/jquery/Registro.js"></script>
+    <script src="/jquery/box.js"></script>
+    <script src="/jquery/menu.js"></script>
+    <script src="/jquery/javascript.js"></script>
     </body>
 </html>
