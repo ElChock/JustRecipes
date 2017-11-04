@@ -44,7 +44,7 @@
 
                 <div id="cuenta">
                     <div style="float: left;">
-                        <h4 >@{{usuarioLogin}}</h4>
+                        <h4 >@{{usuario.nombre}}</h4>
                         <h4><a href="">Cerrar Sesion</a></h4>
                     </div>
                     <div style="float: right; ">
@@ -481,6 +481,6 @@
     <script src="/jquery/box.js"></script>
     <script src="/jquery/menu.js"></script>
     <script src="/jquery/javascript.js"></script>
-    <script src="/js/LoginVue.js"></script>
+    <script src="/js/InicioVue.js"></script>
     </body>
 </html>

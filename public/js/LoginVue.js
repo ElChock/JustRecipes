@@ -20,7 +20,7 @@ new Vue({
     },
     mounted: function() {
         this.$nextTick(function() {
-            axis.post("vueLogin").then(function(response) {
+            axios.post("vueLogin").then(function(response) {
 
                 })
                 .catch(function(error) {

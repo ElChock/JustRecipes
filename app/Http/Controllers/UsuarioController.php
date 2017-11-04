@@ -27,6 +27,13 @@ class UsuarioController extends Controller
         //
 
     }
+
+    public  function statusLogin(Request $request){
+        $user =  $request->session()->get('user');
+        return $user;
+    }
+
+
     public function login(Request $request){
 
         $user =new Usuario();
