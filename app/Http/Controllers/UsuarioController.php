@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\DB;
 use App\Usuario;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Redirect;
+use App\Http\Controllers\EmailController;
 class UsuarioController extends Controller
 {
     /**
@@ -36,17 +38,25 @@ class UsuarioController extends Controller
 
     public function login(Request $request){
 
+        //$url = route('/inicio');
         $user =new Usuario();
         $user = DB::table('usuarios')->where([
             ['correo', '=', $request->correo],
             ['contraseña', '=', $request->contraseña],
         ])->get();
-        session(['user' => json_encode($user)]);
+        $request->session()->forget('user');
+        session(['user'=> $user]);
         //return ['redirect' => route('training_schedules.index')];
         //return ['redirect' => redirect('inicio')];
-        return redirect('inicio');
+        //return view('inicio' );
+        //return  redirect()->route('inicioLogin');
+        return  $request->session()->get('user');
+        return Redirect::to('inicio') ;
+        //showProfile();
+        
 
     }
+    
     /**
      * Store a newly created resource in storage.
      *
@@ -56,7 +66,8 @@ class UsuarioController extends Controller
     public function store(Request $request)
     {
 
-            $user = new Usuario;
+        $email =new EmailController;
+        $user = new Usuario;
             $user->id=0;
             $user->nombre = $request->nombre;
             $user->contraseña = $request->contraseña;
@@ -64,8 +75,10 @@ class UsuarioController extends Controller
             $user->foto="foto";
             $user->token="";
             $create=$user->save();
+            session('user', $user);
             //$user=Usuario::all();
             //$create = Usuario::create($user);
+            $email->sendEmail();
             return  response()->json($create);
 
     }

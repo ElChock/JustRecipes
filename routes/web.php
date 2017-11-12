@@ -10,6 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+//$url = route('inicioLogin');
+//redirect()->route('inicioLogin');
+
 Route::get('/', function () {
     return view('LandingPageResponsive');
 });
@@ -30,14 +34,24 @@ Route::get("/login",function(){
     return view("login");
 });
 
+Route::post("/send","EmailController@send");
+
+//Route::get("/mostrarReceta", ['as' => 'mostrarReceta', 'uses' => 'RecetaController@mostrar']);
 Route::get("/mostrarReceta",function(){
-    return view("MostrarReceta");
+    return view("mostrarReceta");
 });
+
+Route::get("/misRecetas",function(){
+    return view("MisRecetas");
+});
+
 
 Route::post("/vueUser","UsuarioController@store");
 
 Route::post("/vueLogin","UsuarioController@login");
+
 Route::post("/vueLoginStatus","UsuarioController@statusLogin");
 
+Route::post("/vueCrearReceta","RecetaController@store");
 
-// Route::resource("vueUser","UsuarioController");
+Route::POST("/vueReceta", 'RecetaController@mostrar');

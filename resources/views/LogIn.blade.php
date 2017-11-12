@@ -32,7 +32,7 @@
 
                     <ul class="nav navbar-nav navbar-right">
                         <!-- <li><a href="#">Registrate</a></li> -->
-                        <li><a href="#">Registrate</a></li>
+                        <li><a href="/">Registrate</a></li>
                     </ul>
                 </div>
             </nav>

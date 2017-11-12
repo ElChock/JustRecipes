@@ -1,12 +1,7 @@
-//Vue.http.headers.common['X-CSRF-TOKEN'] = $("#token").attr("value");
-//Vue.prototype.$http = axios;
-
 new Vue({
     el: "#formularioRegistro",
     data: {
-        message: "este es el titulo dinamico",
-        usuario: { "nombre": "", "correo": "", "contraseña": "" },
-        formErrors: {}
+        usuario: { "nombre": "", "correo": "", "contraseña": "" }
     },
     methods: {
         createUser: function() {

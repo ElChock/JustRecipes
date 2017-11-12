@@ -32,7 +32,7 @@
 
                     <ul class="nav navbar-nav navbar-right">
                         <!-- <li><a href="#">Registrate</a></li> -->
-                        <li><a href="#">Iniciar Sesion</a></li>
+                        <li><a href="/login">Iniciar Sesion</a></li>
                     </ul>
                 </div>
             </nav>
@@ -71,7 +71,7 @@
                                 <img id="avatar">
                             </div>
                             <input type="submit" name="Registro" class="button" value="Crear Cuenta">
-                            <span id="error" >@{{message}}</span>
+                            
                         </form>
                     </div>
                 </div>

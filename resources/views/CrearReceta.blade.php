@@ -9,8 +9,9 @@
         <link rel="stylesheet" href="/css/Crear.css">
         <link rel="stylesheet" type="text/css" href="/css/EstiloSesion.css" />
         <script src="/jquery/jquery.js"></script>
-        <script src="/jquery/jquery-1.11.3.js"></script>
         <script src="/jquery/jquery-3.1.1.js"></script>
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script language="javascript" type="text/javascript" src="/js/Inicio.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/POP.js"></script>
     </head>
@@ -39,7 +40,7 @@
 
                 <div id="cuenta">
                     <div style="float: left;">
-                        <h4>Abraham</h4>
+                    <h4 >@{{usuario.nombre}}</h4>
                         <h4><a href="">Cerrar Sesion</a></h4>
                     </div>
                     <div style="float: right; ">
@@ -53,7 +54,7 @@
         </div>
     </header>
     <main>
-        <form action="Controller/ControllerRecetas.php" method="POST" enctype="multipart/form-data" >
+        <form  method="POST" enctype="multipart/form-data" v-on:submit.prevent="CrearReceta" id="formReceta" >
         <section id="crear_receta">
             <div class="contenedor">
                 <div id="datos_receta">
@@ -61,12 +62,12 @@
                         <th colspan="9"><h3>Crea tu Propia Receta</h3></th>
                         <tr>
                             <td class="handlee_font">Nómbre de la Receta</td>
-                            <td colspan="8"><input id="tam_nombre" type="text" name="NombreReceta" required="" placeholder="Ejemplo: Pizza con Quéso" ></td>
+                            <td colspan="8"><input id="tam_nombre" type="text" name="NombreReceta" required="" placeholder="Ejemplo: Pizza con Quéso" v-model="receta.nombre" ></td>
                         </tr>
                         <tr>
                             <td class="handlee_font">Dificultad</td>
                             <td>
-                               <select name="dificultad">
+                               <select name="dificultad" v-model="receta.dificultad">
                                <option value="Fácil">Fácil</option>
                                <option value="Normal">Normal</option>
                                <option value="Difícil">Difícil</option>
@@ -74,9 +75,9 @@
                                </select>
                             </td>
                             <td class="handlee_font">Porciónes</td>
-                            <td><input name="porciones" type="text"></td>
+                            <td><input name="porciones" type="text" v-model="receta.porciones"></td>
                             <td class="handlee_font">Tiémpo de Preparación</td>
-                            <td><input name="horas" type="text" id="txt_hrs_min"></td>
+                            <td><input name="horas" type="text" id="txt_hrs_min" v-model="receta.tiempoPreparacion" ></td>
                             <td class="handlee_font">hrs</td>
                             <td><input name="minutos" type="text" id="txt_hrs_min"></td>
                             <td class="handlee_font">min</td>
@@ -92,7 +93,7 @@
                         <th colspan="9"><h3>Descripción</h3></th>
                         <tr>
                             <td>
-                                <textarea name="descripcion"></textarea>
+                                <textarea name="descripcion" v-model="receta.descripcion"></textarea>
                             </td>
                         </tr>
                     </table>
@@ -139,16 +140,16 @@
                        <tr class="fila_base_pasos">
                             <td id="ing_pasos" class="handlee_font">Paso :</td>
                             <td><input type="text" name="pasos[]" placeholder="ej: 100 gramos de jitomate picado"></td>
-                            <td id="tam_icon_pasos"><label for="imagen_pasos" class="icon-picture"></label></td>
-                            <td id="tam_img_pasos"><input id="imagen_pasos" type="file"  name="imagenPasos[]"><div><img id="avatar_pasos"></div></td>
+                            <!-- <td id="tam_icon_pasos"><label for="imagen_pasos" class="icon-picture"></label></td> -->
+                            <!-- <td id="tam_img_pasos"><input id="imagen_pasos" type="file"  name="imagenPasos[]"><div><img id="avatar_pasos"></div></td> -->
                             <td id="icono_cancel_pasos"><h1 class="icon-cancel"></h1>
                             </td>
                         </tr>
                         <tr>
                             <td id="ing_pasos" class="handlee_font">Paso :</td>
                             <td><input type="text" name="pasos[]" placeholder="ej: 100 gramos de jitomate picado"></td>
-                            <td id="tam_icon_pasos"><label for="imagen_pasos" class="icon-picture"></label></td>
-                            <td id="tam_img_pasos"><input id="imagen_pasos" type="file" name="imagenPasos[]" ></td>
+                            <!-- <td id="tam_icon_pasos"><label for="imagen_pasos" class="icon-picture"></label></td> -->
+                            <!-- <td id="tam_img_pasos"><input id="imagen_pasos" type="file" name="imagenPasos[]" ></td> -->
                             <td id="icono_pasos"><h1 class="icon-plus-circled"></h1>
                             </td>
                         </tr>
@@ -194,13 +195,6 @@
         </div>
         </div>
         </section>
-
-
-
-
-
-
-
         </form>
         
 <!-- <div id="popup">
@@ -220,14 +214,8 @@
 </div> -->
     
 <div class="popup-overlay"></div>
-        
 
-
-    </main>
-
-
-
-
+</main>
     
     <footer class="footer">
         <div class="social">
@@ -242,5 +230,7 @@
     <script src="/jquery/javascript.js"></script>
     <script src="/jquery/Crear.js"></script>
     <script src="/jquery/Registro.js"></script>
+    <script src="/js/SesionVue.js"></script>
+    <script src="/js/CrearRecetaVue.js"></script>
     </body>
 </html>

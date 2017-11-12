@@ -16,16 +16,8 @@ new Vue({
                 .catch(function(error) {
                     console.log(error);
                 });
+            //window.location.replace("/inicio");
         }
-    },
-    mounted: function() {
-        this.$nextTick(function() {
-            axios.post("vueLogin").then(function(response) {
 
-                })
-                .catch(function(error) {
-                    console.log(error)
-                });
-        })
     }
 });

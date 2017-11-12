@@ -18,7 +18,6 @@ class CreateIngredientesTable extends Migration
             $table->string('nombre');
             $table->string('cantidad');
             $table->integer('idReceta');
-            $table->integer('idUnidadMedida');
             $table->timestamps();
         });
     }
