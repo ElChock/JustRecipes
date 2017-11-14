@@ -39,6 +39,19 @@ class RecetaController extends Controller
         //return $idReceta."yolo";
     }
 
+    public function mostrarMisRecetas(){
+
+        $receta = new Receta();
+        $user = new Usuario();
+        $user =  $request->session()->get('user');
+
+        $receta=DB::table("recetas")->where(
+            "id","=",$idReceta
+        )->get();
+
+        return response()->json($receta);
+    }
+
     /**
      * Display a listing of the resource.
      *

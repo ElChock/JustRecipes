@@ -45,7 +45,6 @@ Route::get("/misRecetas",function(){
     return view("MisRecetas");
 });
 
-
 Route::post("/vueUser","UsuarioController@store");
 
 Route::post("/vueLogin","UsuarioController@login");
@@ -54,4 +53,6 @@ Route::post("/vueLoginStatus","UsuarioController@statusLogin");
 
 Route::post("/vueCrearReceta","RecetaController@store");
 
-Route::POST("/vueReceta", 'RecetaController@mostrar');
+Route::post("/vueReceta", 'RecetaController@mostrar');
+
+Route::post("/vueMisRecetas","RecetaController@mostrarMisRecetas");

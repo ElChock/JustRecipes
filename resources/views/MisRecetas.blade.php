@@ -9,7 +9,8 @@
         <link href="https://fonts.googleapis.com/css?family=Courgette|Handlee|Kameron" rel="stylesheet"> 
         <link rel="stylesheet" href="/css/fontello.css">
         <link rel="stylesheet" type="text/css" href="/css/EstiloSesion.css" />
-        
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/jquery.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/jquery-1.11.3.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/jquery-3.1.1.js"></script>
@@ -57,17 +58,6 @@
 
 
                                                               <!-- SLIDER -->
-
-        
-
-
-
-
-
-
-
-
-
 
                                                           <!-- LISTA RECETAS -->
 
@@ -225,39 +215,11 @@
                     </table>
                 </div>
 
-                
-                
-
-
-
-
-
-
-
             </div>
         </section>
 
 
-
-
-
-
-
-
-
-
-
-
                                                             <!-- TOP RECETAS -->
-
-       
-
-
-
-
-
-
-
 
                                                                <!-- RECETAS FACILES -->
 
@@ -309,11 +271,6 @@
             </div>
         </section>
 
-
-
-
-
-
                                                                 <!-- POPUP -->
 
 <div id="popup">
@@ -337,14 +294,6 @@
 <div class="popup-overlay"></div>
 
     </main>
-
-
-
-
-
-
-
-
                                                              <!-- FOOTER -->
 
     <footer class="footer">
@@ -358,5 +307,6 @@
     <script src="/jquery/box.js"></script>
     <script src="/jquery/menu.js"></script>
     <script src="/jquery/javascript.js"></script>
+    <script src="/js/MisRecetasVue.js"></script>
     </body>
 </html>
