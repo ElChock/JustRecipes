@@ -6,8 +6,8 @@
 
 var recetas;
 $(document).ready(function() {
-    recetasRecomendadas();
-    ImprimirRecetas();
+    //recetasRecomendadas();
+    //ImprimirRecetas();
 });
 
 function recetasRecomendadas() {

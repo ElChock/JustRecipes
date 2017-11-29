@@ -39,17 +39,45 @@ class RecetaController extends Controller
         //return $idReceta."yolo";
     }
 
-    public function mostrarMisRecetas(){
+    public function eliminar(Request $request){
+        $user = new Usuario();
+        $user = $request->session()->get("user");
+        
+        $deleteRow=Receta::where([
+            ['id', '=', $request->id],
+            ['idUsuario', '=', $user[0]->id],
+        ])->delete();
+        return $deleteRow;
+    }
 
-        $receta = new Receta();
+    public function mostrarTodas(){
+        //$user = new Usuario();
+        //$user = $request->session()->get();
+
+        $receta=Receta::all();
+        return response()->json($receta);
+
+    }
+    public function mostrarMisRecetas(Request $request){
+
+        //$receta = new Receta();
         $user = new Usuario();
         $user =  $request->session()->get('user');
-
-        $receta=DB::table("recetas")->where(
-            "id","=",$idReceta
-        )->get();
+       
+        $receta=Receta::where("idUsuario","=",$user[0]->id)
+                ->get();
 
         return response()->json($receta);
+    }
+
+    public function buscarReceta(Request $request){
+        
+        //return $request->nombre;
+        $receta=Receta::where("nombre",'like', '%' . $request->nombre . '%')
+                ->get();
+
+        return response()->json($receta);
+        
     }
 
     /**

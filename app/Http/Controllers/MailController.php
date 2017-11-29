@@ -2,31 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use Mail;
+
+use app\Http\Mail\classphpmailer;
+use app\Http\Mail\classsmtp;
+use app\Http\Mail\Mail;
+use app\Http\Mail\PHPMailerAutoload;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use App\Usuario;
 
-class EmailController extends Controller
+class MailController extends Controller
 {
-    public function sendEmail(){
-        $title = 'title';
-        $content = 'content';
-
-        Mail::send('inicio', ['title' => $title, 'content' => $content], function ($message)
-        {
-
-            $message->from('ayrtongarcia@gmail.com', 'Christian Nwamba');
-
-            $message->to('wha.spir.wha@hotmail.com');
-
-        });
-
-        return response()->json(['message' => 'Request completed']);
-    }
     public function Enviar($usuario){
         $contenido ="Bienvenido a Justrecipes";
-        $mail = new SMTP();
+        $mail = new PHPMailer();
         $mail->isSMTP();
         $usuarioEmail = new Usuario();
 

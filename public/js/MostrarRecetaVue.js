@@ -25,7 +25,7 @@ new Vue({
                         recetaVue.pasosReceta.push(response.data.pasos[index]);
                     }
                     // console.log(response.data.ingredientes.length);
-                    console.log(recetaVue);
+                    //console.log(recetaVue);
                 })
                 .catch(function(error) {
                     console.log(error)

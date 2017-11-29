@@ -56,3 +56,9 @@ Route::post("/vueCrearReceta","RecetaController@store");
 Route::post("/vueReceta", 'RecetaController@mostrar');
 
 Route::post("/vueMisRecetas","RecetaController@mostrarMisRecetas");
+
+Route::post("/vueRecetaTodas", 'RecetaController@mostrarTodas');
+
+Route::post("/vueBuscarReceta","RecetaController@buscarReceta");
+
+Route::post("/vueEliminarReceta","RecetaController@eliminar");

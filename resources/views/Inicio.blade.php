@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="/css/EstilosInicio.css">
         <link rel="stylesheet" href="/css/EstilosInicioNL.css">
-        <link href="https://fonts.googleapis.com/css?family=Courgette|Handlee|Kameron" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Courgette|Handlee|Kameron" rel="stylesheet">
         <link rel="stylesheet" href="/css/fontello.css">
         <link rel="stylesheet" type="text/css" href="/css/EstiloSesion.css" />
-        
+
         <script language="javascript" type="text/javascript" src="/jquery/jquery.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/jquery-1.11.3.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/jquery-3.1.1.js"></script>
@@ -38,7 +38,7 @@
                     <a href="">Nueva Receta</a>
                     <a href="">Mis Recetas</a>
                     <a href="">Mi Cuenta</a>
-                    
+
                 </nav>
 
 
@@ -50,7 +50,7 @@
                     <div style="float: right; ">
                         <img src="/imagenes/usuario.png" width="70px" height="70px">
                     </div>
-                    
+
                 </div>
 
         </div>
@@ -66,7 +66,7 @@
                 <ul id="ul_slider">
                     <li><h3 class="icon-circle"></h3></li>
                     <li><h3>Recetas de la Semana</h3></li>
-                </ul>    
+                </ul>
                 <div id='carousel_container' class="slideimg">
                     <div id='left_scroll'><a href='javascript:slide("left");'><img src='/imagenes/left.png' /></a></div>
                         <div id='carousel_inner'>
@@ -127,175 +127,13 @@
         </ul>
 
         <section id="lista_recetas">
-
             <div class="contenedor agregarReceta">
-                <div class="receta">
-                    <table cellspacing="5">
-                        <tr>
-                            <td rowspan="7" id="imagen_receta" ><img src="/imagenes/pizza.jpg" alt=""></td>
-                            <td colspan="2"><a href="#">PIZZA</a></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td colspan="2"><hr></td>
-                            <td rowspan="5"><textarea name="comentarios"></textarea></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td colspan="1" class="handlee_font" id="datos" >Tiempo de Preparación: </td>
-                            <td class="roboto_font" id="datos_receta" >1 hora 30 min</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Porciónes: </td>
-                            <td class="roboto_font">4 Persónas</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Dificultad: </td>
-                            <td class="roboto_font">Média</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td id="calificacion" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Receta por:</td>
-                            <td class="roboto_font" id="usuario_receta" colspan="2" >Jovy</td>
-                        </tr>
-                        <tr id="ocultar" >
-                            <td class="handlee_font" colspan="4">
-                                <ul>
-                                    <li>
-                                        <p class="usuario_comentario">Nombre</p>
-                                        <p class="contenido_comentario">Comentarios</p>
-                                    </li>
-                                    <li>
-                                        <p class="usuario_comentario">Nombre</p>
-                                        <p class="contenido_comentario">Comentarios</p>
-                                    </li>
-                                </ul>
-                            </td>
-                            
-                            
-                        </tr>
-                    </table>
-                </div>
-                
-                <div class="receta">
-                    <table cellspacing="5">
-                        <tr>
-                            <td rowspan="7" id="imagen_receta" ><img src="/imagenes/pizza.jpg" alt=""></td>
-                            <td colspan="2"><a href="#">PIZZA</a></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td colspan="2"><hr></td>
-                            <td rowspan="5"><textarea name="comentarios"></textarea></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td colspan="1" class="handlee_font" id="datos" >Tiempo de Preparación: </td>
-                            <td class="roboto_font" id="datos_receta" >1 hora 30 min</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Porciónes: </td>
-                            <td class="roboto_font">4 Persónas</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Dificultad: </td>
-                            <td class="roboto_font">Média</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td id="calificacion" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Receta por:</td>
-                            <td class="roboto_font" id="usuario_receta" colspan="2" >Jovy</td>
-                        </tr>
-                        <tr id="ocultar" >
-                            <td class="handlee_font" colspan="4">
-                                <ul>
-                                    <li>
-                                        <p class="usuario_comentario">Nombre</p>
-                                        <p class="contenido_comentario">Comentarios</p>
-                                    </li>
-                                    <li>
-                                        <p class="usuario_comentario">Nombre</p>
-                                        <p class="contenido_comentario">Comentarios</p>
-                                    </li>
-                                </ul>
-                            </td>
-                            
-                            
-                        </tr>
-                    </table>
-                </div>
-
-
-                <div class="receta">
-                    <table cellspacing="5">
-                        <tr>
-                            <td rowspan="7" id="imagen_receta" ><img src="/imagenes/pizza.jpg" alt=""></td>
-                            <td colspan="2"><a href="#">PIZZA</a></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td colspan="2"><hr></td>
-                            <td rowspan="5"><textarea name="comentarios"></textarea></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td colspan="1" class="handlee_font" id="datos" >Tiempo de Preparación: </td>
-                            <td class="roboto_font" id="datos_receta" >1 hora 30 min</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Porciónes: </td>
-                            <td class="roboto_font">4 Persónas</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Dificultad: </td>
-                            <td class="roboto_font">Média</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td id="calificacion" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Receta por:</td>
-                            <td class="roboto_font" id="usuario_receta" colspan="2" >Jovy</td>
-                        </tr>
-                        <tr id="ocultar" >
-                            <td class="handlee_font" colspan="4">
-                                <ul>
-                                    <li>
-                                        <p class="usuario_comentario">Nombre</p>
-                                        <p class="contenido_comentario">Comentarios</p>
-                                    </li>
-                                    <li>
-                                        <p class="usuario_comentario">Nombre</p>
-                                        <p class="contenido_comentario">Comentarios</p>
-                                    </li>
-                                </ul>
-                            </td>
-                            
-                            
-                        </tr>
-                    </table>
-                </div>
-
-                
-                
-
-
-
-
-
-
 
             </div>
+            <div id="recetas" class="contenedor agregarReceta">
+            </div>
+
         </section>
-
-
-
-
-
-
-
-
-
-
-
 
                                                             <!-- TOP RECETAS -->
 
@@ -322,7 +160,7 @@
                         <tr>
                             <td id="calificacion" class="separador" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
                         </tr>
-                        
+
                         <tr>
                             <td rowspan="3" id="imagen_top_receta" class="separador"><img class="box_comida" src="/imagenes/pizza.jpg" alt=""></td>
                             <td colspan="2"><a href="#">Pizza</a></td>
@@ -334,7 +172,7 @@
                         <tr>
                             <td id="calificacion" class="separador" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
                         </tr>
-                        
+
                         <tr>
                             <td rowspan="3" id="imagen_top_receta" class="separador"><img class="box_comida" src="/imagenes/ensalada.jpg" alt=""></td>
                             <td colspan="2"><a href="#">Ensalada de pollo</a></td>
@@ -346,7 +184,7 @@
                         <tr>
                             <td id="calificacion" class="separador" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
                         </tr>
-                        
+
                         <tr>
                             <td rowspan="3" id="imagen_top_receta" class="separador"><img class="box_comida" src="/imagenes/queso.jpg" alt=""></td>
                             <td colspan="2"><a href="#">Queso</a></td>
@@ -358,7 +196,7 @@
                         <tr>
                             <td id="calificacion" class="separador" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
                         </tr>
-                        
+
                         <tr>
                             <td rowspan="3" id="imagen_top_receta" class="separador"><img class="box_comida" src="/imagenes/tacos.jpg" alt=""></td>
                             <td colspan="2"><a href="#">Tácos de Trompo</a></td>
@@ -445,18 +283,18 @@
         <div>
             <h3>Iniciar Sesión</h3>
             <div id="POPformularioRegistro">
-                <form id="POPIniciarSesion" name="Session" action="Controller/controllerLogin.php"  method="POST" >              
-                <input type="text" name="correo" id="correo" placeholder="Ingresa tu correo"/>               
+                <form id="POPIniciarSesion" name="Session" action="Controller/controllerLogin.php"  method="POST" >
+                <input type="text" name="correo" id="correo" placeholder="Ingresa tu correo"/>
                 <input type="password" name="password" id="password" placeholder="Contraseña"/>
                 <input class="POPbutton" type="submit" value="Entrar">
                 </form>
             </div>
-            
+
         </div>
    </div>
-     
+
 </div>
-    
+
 <div class="popup-overlay"></div>
 
     </main>

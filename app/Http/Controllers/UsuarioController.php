@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\DB;
 use App\Usuario;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
-use App\Http\Controllers\EmailController;
+//use App\Http\Controllers\EmailController;
 class UsuarioController extends Controller
 {
     /**
@@ -78,7 +78,7 @@ class UsuarioController extends Controller
             session('user', $user);
             //$user=Usuario::all();
             //$create = Usuario::create($user);
-            $email->sendEmail();
+           // $email->sendEmail();
             return  response()->json($create);
 
     }

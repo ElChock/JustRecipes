@@ -12,11 +12,12 @@ new Vue({
             axios.post("/vueLogin", usuarioVue).then(function(response) {
                     console.log(response);
                     //window.location = response.data;
+                    window.location.replace("/inicio");
                 })
                 .catch(function(error) {
                     console.log(error);
                 });
-            //window.location.replace("/inicio");
+
         }
 
     }

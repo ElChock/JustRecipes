@@ -9,6 +9,8 @@
         <link href="https://fonts.googleapis.com/css?family=Courgette|Handlee|Kameron" rel="stylesheet"> 
         <link rel="stylesheet" href="/css/fontello.css">
         <link rel="stylesheet" type="text/css" href="/css/EstiloSesion.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/vue"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/jquery.js"></script>
@@ -24,9 +26,9 @@
             <div class="contenedor" id="headerRegistro">
                 <img src="/imagenes/logo16.png" class="logo" height="80px;" alt="">
                 <input type="checkbox" id="menu_bar">
-                <form action="">
+                <form action="/misRecetas" method=get>
                     <div id="busqueda">
-                        <input type="text" class="buscar" id="find" placeholder="Ejemplo: Pizza">
+                        <input type="text" class="buscar" name=nombre id="find" placeholder="Ejemplo: Pizza">
                         <input type="submit" value="Buscar" class="buscar" id="btn_find">
                     </div>
                 </form>
@@ -51,7 +53,7 @@
                     
                 </div>
 
-        </div>
+            </div>
     </header>
     <main>
 
@@ -66,156 +68,55 @@
             <li><h2 class="icon-circle"></h2></li>
             <li><h2>Mis Recetas</h2></li>
         </ul>
+        <section id="lista_recetas" class="misRecetas-listas">   
+            <ol>
+                <li v-for="item in receta">
+                <div class=receta>
+                    
+                        <table cellspacing=5>
+                            <tr>
+                                <td rowspan=7 id=imagen_receta ><img src=/imagenes/pizza.jpg alt=></td>
+                                <td colspan=2>
+                                    <a :href="'/mostrarReceta?idReceta='+item.id " >  @{{item.nombre}}</a>
+                                    <button v-on:click="vueEliminarReceta(+item.id)" id=eliminar class="btn btn-danger btn-sm">Eliminar </button>
+                                    <a class="btn btn-info btn-sm" :href="'/crearReceta?idReceta='+item.id" role="button">Editar</a>
+                                    
+                                </td > 
+                            </tr>
+                            <tr id=ocultar>
+                                <td colspan=2><hr></td>
+                                <td rowspan=5><textarea ></textarea></td>
+                            </tr>
+                            <tr id=ocultar>
+                                <td colspan=1 class=handlee_font id=datos >Tiempo de Preparación: </td>
+                                <td class=roboto_font id=datos_receta  >@{{item.tiempo}}</td>
+                            </tr>
+                            <tr id=ocultar>
+                                <td class=handlee_font>Porciónes: </td>
+                                <td class=roboto_font>@{{item.porciones}}</td>
+                            </tr>
+                            <tr id=ocultar>
+                                <td class=handlee_font>Dificultad: </td>
+                                <td class=roboto_font>@{{item.dificultad}}</td>
+                            </tr>
+                            <tr id=ocultar>
+                                <td id=calificacion colspan=2><img src=/imagenes/calificacion.png alt=></td>
+                            </tr>
+                            <tr id=ocultar>
+                                <td class=handlee_font>Receta por:</td>
+                                <td class=roboto_font id=usuario_receta colspan=2 >Jovy</td>
+                            </tr>
+                        </table>
+                    
 
-        <section id="lista_recetas" class="misRecetas-listas">
-
-            <div class="contenedor agregarReceta">
-                <div class="receta">
-                    <table cellspacing="5">
-                        <tr>
-                            <td rowspan="7" id="imagen_receta" ><img src="/imagenes/pizza.jpg" alt=""></td>
-                            <td colspan="2"><a href="#">PIZZA</a></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td colspan="2"><hr></td>
-                            <td rowspan="5"><textarea name="comentarios"></textarea></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td colspan="1" class="handlee_font" id="datos" >Tiempo de Preparación: </td>
-                            <td class="roboto_font" id="datos_receta" >1 hora 30 min</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Porciónes: </td>
-                            <td class="roboto_font">4 Persónas</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Dificultad: </td>
-                            <td class="roboto_font">Média</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td id="calificacion" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Receta por:</td>
-                            <td class="roboto_font" id="usuario_receta" colspan="2" >Jovy</td>
-                        </tr>
-                        <tr id="ocultar" >
-                            <td class="handlee_font" colspan="4">
-                                <ul>
-                                    <li>
-                                        <p class="usuario_comentario">Nombre</p>
-                                        <p class="contenido_comentario">Comentarios</p>
-                                    </li>
-                                    <li>
-                                        <p class="usuario_comentario">Nombre</p>
-                                        <p class="contenido_comentario">Comentarios</p>
-                                    </li>
-                                </ul>
-                            </td>
-                            
-                            
-                        </tr>
-                    </table>
-                </div>
+                    </div>
                 
-                <div class="receta">
-                    <table cellspacing="5">
-                        <tr>
-                            <td rowspan="7" id="imagen_receta" ><img src="/imagenes/pizza.jpg" alt=""></td>
-                            <td colspan="2"><a href="#">PIZZA</a></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td colspan="2"><hr></td>
-                            <td rowspan="5"><textarea name="comentarios"></textarea></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td colspan="1" class="handlee_font" id="datos" >Tiempo de Preparación: </td>
-                            <td class="roboto_font" id="datos_receta" >1 hora 30 min</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Porciónes: </td>
-                            <td class="roboto_font">4 Persónas</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Dificultad: </td>
-                            <td class="roboto_font">Média</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td id="calificacion" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Receta por:</td>
-                            <td class="roboto_font" id="usuario_receta" colspan="2" >Jovy</td>
-                        </tr>
-                        <tr id="ocultar" >
-                            <td class="handlee_font" colspan="4">
-                                <ul>
-                                    <li>
-                                        <p class="usuario_comentario">Nombre</p>
-                                        <p class="contenido_comentario">Comentarios</p>
-                                    </li>
-                                    <li>
-                                        <p class="usuario_comentario">Nombre</p>
-                                        <p class="contenido_comentario">Comentarios</p>
-                                    </li>
-                                </ul>
-                            </td>
-                            
-                            
-                        </tr>
-                    </table>
-                </div>
-
-
-                <div class="receta">
-                    <table cellspacing="5">
-                        <tr>
-                            <td rowspan="7" id="imagen_receta" ><img src="/imagenes/pizza.jpg" alt=""></td>
-                            <td colspan="2"><a href="#">PIZZA</a></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td colspan="2"><hr></td>
-                            <td rowspan="5"><textarea name="comentarios"></textarea></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td colspan="1" class="handlee_font" id="datos" >Tiempo de Preparación: </td>
-                            <td class="roboto_font" id="datos_receta" >1 hora 30 min</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Porciónes: </td>
-                            <td class="roboto_font">4 Persónas</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Dificultad: </td>
-                            <td class="roboto_font">Média</td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td id="calificacion" colspan="2"><img src="/imagenes/calificacion.png" alt=""></td>
-                        </tr>
-                        <tr id="ocultar">
-                            <td class="handlee_font">Receta por:</td>
-                            <td class="roboto_font" id="usuario_receta" colspan="2" >Jovy</td>
-                        </tr>
-                        <tr id="ocultar" >
-                            <td class="handlee_font" colspan="4">
-                                <ul>
-                                    <li>
-                                        <p class="usuario_comentario">Nombre</p>
-                                        <p class="contenido_comentario">Comentarios</p>
-                                    </li>
-                                    <li>
-                                        <p class="usuario_comentario">Nombre</p>
-                                        <p class="contenido_comentario">Comentarios</p>
-                                    </li>
-                                </ul>
-                            </td>
-                            
-                            
-                        </tr>
-                    </table>
-                </div>
-
-            </div>
+                            <div id="recetas" class="contenedor agregarReceta">
+                        
+                    </div>
+                </li>
+            </ol>        
+       
         </section>
 
 

@@ -42,14 +42,14 @@
     <div class="contenedor">
         <div class="container-fluid">
             <div class="main row">
-                <div class="    col-xs-12 col-sm-7 col-md-3 col-lg-3    ">
+                <div class=" col-xs-12 col-sm-7 col-md-3 col-lg-3    ">
                     
                 </div>
 
 
 
 
-                <div class="columna        col-xs-12 col-sm-5  col-md-6  col-lg-4 col-lg-offset-1">
+                <div class="columna col-xs-12 col-sm-5  col-md-6  col-lg-4 col-lg-offset-1">
                     <div class="cajaBlanca">
                         <!-- <h3>Aun no formas parte de nuestra comunidad?</h3> -->
                         <div id="logo">
