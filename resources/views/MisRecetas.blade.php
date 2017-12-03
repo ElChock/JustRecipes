@@ -13,6 +13,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/vue"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <meta name="csrf-token" content=@{{csrf_token()}}>
         <script language="javascript" type="text/javascript" src="/jquery/jquery.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/jquery-1.11.3.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/jquery-3.1.1.js"></script>
@@ -35,10 +36,10 @@
 
 
                 <nav class="menu">
-                    <a href="">Inicio</a>
-                    <a href="">Nueva Receta</a>
-                    <a href="">Mis Recetas</a>
-                    <a href="">Mi Cuenta</a>
+                <a href="/inicio">Inicio</a>
+                <a href="/crearReceta">Nueva Receta</a>
+                <a href="/misRecetas">Mis Recetas</a>
+                <a href="/editarPerfil">Mi Cuenta</a>
                     
                 </nav>
 

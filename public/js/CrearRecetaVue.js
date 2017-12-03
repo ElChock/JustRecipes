@@ -7,7 +7,8 @@ new Vue({
     },
     methods: {
         CrearReceta: function() {
-            console.log(this.receta);
+            var nombre = getParameterByName("nombre");
+
             var ingredientesList = document.getElementById('tabla').childNodes;
             var pasosList = document.getElementById('tabla_pasos').childNodes;
             var recetaVue = this.receta;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/EstilosInicio.css">
     <link rel="stylesheet" href="/css/fontello.css">
     <link rel="stylesheet" href="/css/mostrarReceta.css">
+    <meta name="csrf-token" content=@{{ csrf_token() }}>
     <script language="javascript" type="text/javascript" src="/jquery/jquery.js"></script>
     <script language="javascript" type="text/javascript" src="/jquery/jquery-1.11.3.js"></script>
     <script language="javascript" type="text/javascript" src="/jquery/jquery-3.1.1.js"></script>
@@ -24,18 +25,18 @@
             <img src="/imagenes/logo16.png" class="logo" height="80px" alt="">
             <input type="checkbox" id="menu_bar">
             <label class="icon-menu" for="menu_bar"></label>
-            <form action="">
+            <form action="/misRecetas" method=get>
                 <div id="busqueda">
-                    <input type="text" class="buscar" id="find" placeholder="Ejemplo: Pizza">
+                    <input type="text" class="buscar" name=nombre id="find" placeholder="Ejemplo: Pizza">
                     <input type="submit" value="Buscar" class="buscar" id="btn_find">
                 </div>
             </form>
 
             <nav class="menu">
-                <a href="">Inicio</a>
-                <a href="">Nueva Receta</a>
-                <a href="">Mis Recetas</a>
-                <a href="">Mi Cuenta</a>
+            <a href="/inicio">Inicio</a>
+            <a href="/crearReceta">Nueva Receta</a>
+            <a href="/misRecetas">Mis Recetas</a>
+            <a href="/editarPerfil">Mi Cuenta</a>
 
             </nav>
 
