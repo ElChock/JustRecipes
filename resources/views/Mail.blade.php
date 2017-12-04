@@ -1,37 +1,4 @@
-<?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of Mail
- *
- * @author Ayrton
- */
-class Mail {
-    
-    function getLink() {
-        return $this->link;
-    }
-
-    function getCorreo() {
-        return $this->correo;
-    }
-
-    function setLink($link) {
-        $this->link = $link;
-    }
-
-    function setCorreo($correo) {
-        $this->correo = $correo;
-    }
-
-     
-    private $link;
-    private $correo = '<!doctype html>
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 	<head>
 		<meta charset="UTF-8">
@@ -702,5 +669,4 @@ class Mail {
             </table>
         </center>
     </body>
-</html> ';
-}
+</html> 

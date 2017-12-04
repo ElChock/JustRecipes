@@ -15,6 +15,7 @@ new Vue({
             // });
             axios.post("/vueUser", usuarioVue).then(function(response) {
                     console.log(response);
+                    //window.location.replace("/inicio");
                 })
                 .catch(function(error) {
                     console.log(error);

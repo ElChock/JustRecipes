@@ -209,6 +209,7 @@
     <script src="/jquery/box.js"></script>
     <script src="/jquery/menu.js"></script>
     <script src="/jquery/javascript.js"></script>
+    <script src="/js/tools.js"></script>
     <script src="/js/MisRecetasVue.js"></script>
     </body>
 </html>

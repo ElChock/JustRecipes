@@ -411,6 +411,7 @@
     <script src="/jquery/box.js"></script>
     <script src="/jquery/menu.js"></script>
     <script src="/jquery/javascript.js"></script>
+    <script src="/js/tools.js"></script>
     <script src="/js/SesionVue.js"></script>
     <script src="/js/MostrarRecetaVue.js"></script>
 </body>

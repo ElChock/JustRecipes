@@ -34,9 +34,6 @@ Route::get("/login",function(){
     return view("login");
 });
 
-Route::post("/send","EmailController@send");
-
-//Route::get("/mostrarReceta", ['as' => 'mostrarReceta', 'uses' => 'RecetaController@mostrar']);
 Route::get("/mostrarReceta",function(){
     return view("mostrarReceta");
 });
@@ -62,3 +59,5 @@ Route::post("/vueRecetaTodas", 'RecetaController@mostrarTodas');
 Route::post("/vueBuscarReceta","RecetaController@buscarReceta");
 
 Route::post("/vueEliminarReceta","RecetaController@eliminar");
+
+Route::post("/vueActualizarReceta","RecetaController@actualizar");

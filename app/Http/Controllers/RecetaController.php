@@ -13,7 +13,28 @@ use Illuminate\Support\Facades\DB;
 
 class RecetaController extends Controller
 {
-
+    public function actualizar(Request $request){
+        $receta = Receta::find($request["id"]);
+        $recetaVue=$request;
+        $user =  $request->session()->get('user');
+        //return $user[0]->id;
+        //return  $recetaVue["ingredientesReceta"][1];
+        $receta->nombre=$recetaVue["nombre"];
+        $receta->idUsuario=$recetaVue["idUsuario"];
+        $receta->porciones=$recetaVue["porciones"];
+        $receta->foto="";
+        $receta->dificultad=$recetaVue["dificultad"];
+        $receta->descripcion=$recetaVue["descripcion"];
+        $receta->tiempo=$recetaVue["tiempoPreparacion"];
+        $receta->id=$recetaVue["id"];
+        // return  $receta->idUsuario;
+        if($user[0]->id==$receta->idUsuario){
+            //return "yolo";
+            $receta->save();
+            
+        }
+        
+    }
     public function mostrar(Request $request)
     {
         $idReceta = $request->idReceta;   

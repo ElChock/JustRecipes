@@ -16,15 +16,18 @@ new Vue({
                 axios.post("/vueMisRecetas").then(function(response) {
                         for (let index = 0; index < response.data.length; index++) {
                             recetaVue.push(response.data[index]);
-                        }
+                        }   
+                        console.log(recetaVue);
                     })
                     .catch(function(error) {
                         console.log(error);
                     });
             } else {
+                var recetaVue = this.receta;
                 axios.post("/vueBuscarReceta", { nombre }).then(function(response) {
-                        //console.log(response);
-                        var recetaVue = response.data;
+                        for (let index = 0; index < response.data.length; index++) {
+                            recetaVue.push(response.data[index]);
+                        }
                     })
                     .catch(function(error) {
                         console.log(error);

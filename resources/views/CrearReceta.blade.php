@@ -13,6 +13,7 @@
         <script src="/jquery/jquery-3.1.1.js"></script>
         <script src="https://unpkg.com/vue"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
         <script language="javascript" type="text/javascript" src="/js/Inicio.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/POP.js"></script>
     </head>
@@ -59,6 +60,7 @@
         <section id="crear_receta">
             <div class="contenedor">
                 <div id="datos_receta">
+                <input type=hidden v-bind:value=receta.id>
                     <table cellspacing="3">
                         <th colspan="9"><h3>Crea tu Propia Receta</h3></th>
                         <tr>
@@ -231,6 +233,7 @@
     <script src="/jquery/javascript.js"></script>
     <script src="/jquery/Crear.js"></script>
     <script src="/jquery/Registro.js"></script>
+    <script src="/js/tools.js"></script>
     <script src="/js/SesionVue.js"></script>
     <script src="/js/CrearRecetaVue.js"></script>
     </body>

@@ -6,7 +6,8 @@ use Illuminate\Support\Facades\DB;
 use App\Usuario;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
-//use App\Http\Controllers\EmailController;
+use App\Mail\mailGmail;
+
 class UsuarioController extends Controller
 {
     /**
@@ -66,7 +67,6 @@ class UsuarioController extends Controller
     public function store(Request $request)
     {
 
-        $email =new EmailController;
         $user = new Usuario;
             $user->id=0;
             $user->nombre = $request->nombre;
@@ -74,12 +74,14 @@ class UsuarioController extends Controller
             $user->correo = $request->correo;
             $user->foto="foto";
             $user->token="";
-            $create=$user->save();
+            $user->save();
+           // Mail::to("wha.spir.wha@hotmail.com")->send(new mailGmail());
+           $mail=new mailGmail();
             session('user', $user);
             //$user=Usuario::all();
             //$create = Usuario::create($user);
            // $email->sendEmail();
-            return  response()->json($create);
+            return  response()->json($user);
 
     }
 
