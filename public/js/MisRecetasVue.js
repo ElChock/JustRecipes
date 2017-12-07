@@ -5,7 +5,7 @@ new Vue({
     },
     mounted: function() {
         this.$nextTick(function() {
-            let config = {
+            var config = {
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
@@ -16,7 +16,7 @@ new Vue({
                 axios.post("/vueMisRecetas").then(function(response) {
                         for (let index = 0; index < response.data.length; index++) {
                             recetaVue.push(response.data[index]);
-                        }   
+                        }
                         console.log(recetaVue);
                     })
                     .catch(function(error) {
@@ -24,7 +24,7 @@ new Vue({
                     });
             } else {
                 var recetaVue = this.receta;
-                axios.post("/vueBuscarReceta", { nombre }).then(function(response) {
+                axios.post("/vueBuscarReceta", { nombre }, config).then(function(response) {
                         for (let index = 0; index < response.data.length; index++) {
                             recetaVue.push(response.data[index]);
                         }

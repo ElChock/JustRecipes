@@ -93,163 +93,163 @@
 		}
 
 		body,#bodyTable{
-			/*@editable*/background-color:#FAFAFA;
+			/*editable*/background-color:#FAFAFA;
 		}
 
 		#bodyCell{
-			/*@editable*/border-top:0;
+			/*editable*/border-top:0;
 		}
 
 		.templateContainer{
-			/*@editable*/border:0;
+			/*editable*/border:0;
 		}
 
 		h1{
-			/*@editable*/color:#202020;
-			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:26px;
-			/*@editable*/font-style:normal;
-			/*@editable*/font-weight:bold;
-			/*@editable*/line-height:125%;
-			/*@editable*/letter-spacing:normal;
-			/*@editable*/text-align:left;
+			/*editable*/color:#202020;
+			/*editable*/font-family:Helvetica;
+			/*editable*/font-size:26px;
+			/*editable*/font-style:normal;
+			/*editable*/font-weight:bold;
+			/*editable*/line-height:125%;
+			/*editable*/letter-spacing:normal;
+			/*editable*/text-align:left;
 		}
 
 		h2{
-			/*@editable*/color:#202020;
-			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:22px;
-			/*@editable*/font-style:normal;
-			/*@editable*/font-weight:bold;
-			/*@editable*/line-height:125%;
-			/*@editable*/letter-spacing:normal;
-			/*@editable*/text-align:left;
+			/*editable*/color:#202020;
+			/*editable*/font-family:Helvetica;
+			/*editable*/font-size:22px;
+			/*editable*/font-style:normal;
+			/*editable*/font-weight:bold;
+			/*editable*/line-height:125%;
+			/*editable*/letter-spacing:normal;
+			/*editable*/text-align:left;
 		}
 
 		h3{
-			/*@editable*/color:#202020;
-			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:20px;
-			/*@editable*/font-style:normal;
-			/*@editable*/font-weight:bold;
-			/*@editable*/line-height:125%;
-			/*@editable*/letter-spacing:normal;
-			/*@editable*/text-align:left;
+			/*editable*/color:#202020;
+			/*editable*/font-family:Helvetica;
+			/*editable*/font-size:20px;
+			/*editable*/font-style:normal;
+			/*editable*/font-weight:bold;
+			/*editable*/line-height:125%;
+			/*editable*/letter-spacing:normal;
+			/*editable*/text-align:left;
 		}
 
 		h4{
-			/*@editable*/color:#202020;
-			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:18px;
-			/*@editable*/font-style:normal;
-			/*@editable*/font-weight:bold;
-			/*@editable*/line-height:125%;
-			/*@editable*/letter-spacing:normal;
-			/*@editable*/text-align:left;
+			/*editable*/color:#202020;
+			/*editable*/font-family:Helvetica;
+			/*editable*/font-size:18px;
+			/*editable*/font-style:normal;
+			/*editable*/font-weight:bold;
+			/*editable*/line-height:125%;
+			/*editable*/letter-spacing:normal;
+			/*editable*/text-align:left;
 		}
 
 		#templatePreheader{
-			/*@editable*/background-color:#FAFAFA;
-			/*@editable*/background-image:none;
-			/*@editable*/background-repeat:no-repeat;
-			/*@editable*/background-position:center;
-			/*@editable*/background-size:cover;
-			/*@editable*/border-top:0;
-			/*@editable*/border-bottom:0;
-			/*@editable*/padding-top:9px;
-			/*@editable*/padding-bottom:9px;
+			/*editable*/background-color:#FAFAFA;
+			/*editable*/background-image:none;
+			/*editable*/background-repeat:no-repeat;
+			/*editable*/background-position:center;
+			/*editable*/background-size:cover;
+			/*editable*/border-top:0;
+			/*editable*/border-bottom:0;
+			/*editable*/padding-top:9px;
+			/*editable*/padding-bottom:9px;
 		}
 
 		#templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent p{
-			/*@editable*/color:#656565;
-			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:12px;
-			/*@editable*/line-height:150%;
-			/*@editable*/text-align:left;
+			/*editable*/color:#656565;
+			/*editable*/font-family:Helvetica;
+			/*editable*/font-size:12px;
+			/*editable*/line-height:150%;
+			/*editable*/text-align:left;
 		}
 
 		#templatePreheader .mcnTextContent a,#templatePreheader .mcnTextContent p a{
-			/*@editable*/color:#656565;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
+			/*editable*/color:#656565;
+			/*editable*/font-weight:normal;
+			/*editable*/text-decoration:underline;
 		}
 
 		#templateHeader{
-			/*@editable*/background-color:#f6fdfd;
-			/*@editable*/background-image:none;
-			/*@editable*/background-repeat:no-repeat;
-			/*@editable*/background-position:center;
-			/*@editable*/background-size:cover;
-			/*@editable*/border-top:5px groove #b780ff;
-			/*@editable*/border-bottom:5px ridge #7fffd4;
-			/*@editable*/padding-top:0px;
-			/*@editable*/padding-bottom:5px;
+			/*editable*/background-color:#f6fdfd;
+			/*editable*/background-image:none;
+			/*editable*/background-repeat:no-repeat;
+			/*editable*/background-position:center;
+			/*editable*/background-size:cover;
+			/*editable*/border-top:5px groove #b780ff;
+			/*editable*/border-bottom:5px ridge #7fffd4;
+			/*editable*/padding-top:0px;
+			/*editable*/padding-bottom:5px;
 		}
 
 		#templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
-			/*@editable*/color:#202020;
-			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:16px;
-			/*@editable*/line-height:150%;
-			/*@editable*/text-align:left;
+			/*editable*/color:#202020;
+			/*editable*/font-family:Helvetica;
+			/*editable*/font-size:16px;
+			/*editable*/line-height:150%;
+			/*editable*/text-align:left;
 		}
 
 		#templateHeader .mcnTextContent a,#templateHeader .mcnTextContent p a{
-			/*@editable*/color:#2BAADF;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
+			/*editable*/color:#2BAADF;
+			/*editable*/font-weight:normal;
+			/*editable*/text-decoration:underline;
 		}
 
 		#templateBody{
-			/*@editable*/background-color:#f6fdfd;
-			/*@editable*/background-image:none;
-			/*@editable*/background-repeat:no-repeat;
-			/*@editable*/background-position:center;
-			/*@editable*/background-size:cover;
-			/*@editable*/border-top:0;
-			/*@editable*/border-bottom:5px ridge #b780ff;
-			/*@editable*/padding-top:10px;
-			/*@editable*/padding-bottom:10px;
+			/*editable*/background-color:#f6fdfd;
+			/*editable*/background-image:none;
+			/*editable*/background-repeat:no-repeat;
+			/*editable*/background-position:center;
+			/*editable*/background-size:cover;
+			/*editable*/border-top:0;
+			/*editable*/border-bottom:5px ridge #b780ff;
+			/*editable*/padding-top:10px;
+			/*editable*/padding-bottom:10px;
 		}
 
 		#templateBody .mcnTextContent,#templateBody .mcnTextContent p{
-			/*@editable*/color:#4b4848;
-			/*@editable*/font-family:"Lucida Sans Unicode"", "Lucida Grande"", sans-serif;
-			/*@editable*/font-size:16px;
-			/*@editable*/line-height:150%;
-			/*@editable*/text-align:left;
+			/*editable*/color:#4b4848;
+			/*editable*/font-family:"Lucida Sans Unicode"", "Lucida Grande"", sans-serif;
+			/*editable*/font-size:16px;
+			/*editable*/line-height:150%;
+			/*editable*/text-align:left;
 		}
 
 		#templateBody .mcnTextContent a,#templateBody .mcnTextContent p a{
-			/*@editable*/color:#2baadf;
-			/*@editable*/font-weight:bold;
-			/*@editable*/text-decoration:underline;
+			/*editable*/color:#2baadf;
+			/*editable*/font-weight:bold;
+			/*editable*/text-decoration:underline;
 		}
 
 		#templateFooter{
-			/*@editable*/background-color:#fafafa;
-			/*@editable*/background-image:none;
-			/*@editable*/background-repeat:no-repeat;
-			/*@editable*/background-position:center;
-			/*@editable*/background-size:cover;
-			/*@editable*/border-top:0;
-			/*@editable*/border-bottom:5px none ;
-			/*@editable*/padding-top:9px;
-			/*@editable*/padding-bottom:9px;
+			/*editable*/background-color:#fafafa;
+			/*editable*/background-image:none;
+			/*editable*/background-repeat:no-repeat;
+			/*editable*/background-position:center;
+			/*editable*/background-size:cover;
+			/*editable*/border-top:0;
+			/*editable*/border-bottom:5px none ;
+			/*editable*/padding-top:9px;
+			/*editable*/padding-bottom:9px;
 		}
 
 		#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
-			/*@editable*/color:#656565;
-			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:12px;
-			/*@editable*/line-height:150%;
-			/*@editable*/text-align:center;
+			/*editable*/color:#656565;
+			/*editable*/font-family:Helvetica;
+			/*editable*/font-size:12px;
+			/*editable*/line-height:150%;
+			/*editable*/text-align:center;
 		}
 
 		#templateFooter .mcnTextContent a,#templateFooter .mcnTextContent p a{
-			/*@editable*/color:#656565;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
+			/*editable*/color:#656565;
+			/*editable*/font-weight:normal;
+			/*editable*/text-decoration:underline;
 		}
 	@media only screen and (min-width:768px){
 		.templateContainer{
