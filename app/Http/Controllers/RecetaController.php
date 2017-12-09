@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Receta;
-use App\Paso;
+use App\paso;
 use App\Ingrediente;
 use App\Usuario;
 use Illuminate\Http\Request;
