@@ -18,7 +18,7 @@ class RecetaController extends Controller
         $recetaVue=$request;
         $user =  $request->session()->get('user');
         //return $user[0]->id;
-        //return  $recetaVue["ingredientesReceta"][1];
+        return  $recetaVue["ingredientesReceta"];
         $receta->nombre=$recetaVue["nombre"];
         $receta->idUsuario=$recetaVue["idUsuario"];
         $receta->porciones=$recetaVue["porciones"];

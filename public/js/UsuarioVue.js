@@ -5,6 +5,11 @@ new Vue({
     },
     methods: {
         createUser: function() {
+            var config = {
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            }
             var usuarioVue = this.usuario;
             // this.$http.post('/vueUser', input).then((response) => {
             //     this.newItem = { 'nombre': '', 'correo': '', "contraseña": "" };
@@ -13,7 +18,7 @@ new Vue({
             //     toastr.success(response.data, 'Success Alert', { timeOut: 5000 });
 
             // });
-            axios.post("/vueUser", usuarioVue).then(function(response) {
+            axios.post("/vueUser", usuarioVue, config).then(function(response) {
                     console.log(response);
                     window.location.replace("/inicio");
                 })

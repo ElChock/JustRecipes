@@ -8,11 +8,11 @@
         <link rel="stylesheet" href="/css/fontello.css">
         <link rel="stylesheet" href="/css/Crear.css">
         <link rel="stylesheet" type="text/css" href="/css/EstiloSesion.css" />
-        <meta name="csrf-token" content=@{{ csrf_token() }}>
+        <meta name="csrf-token" content={{csrf_token()}}>
         <script src="/jquery/jquery.js"></script>
         <script src="/jquery/jquery-3.1.1.js"></script>
-        <script src="https://unpkg.com/vue"></script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="/js/vue.js"></script>
+        <script src="/js/axios.min.js"></script>
 
         <script language="javascript" type="text/javascript" src="/js/Inicio.js"></script>
         <script language="javascript" type="text/javascript" src="/jquery/POP.js"></script>
@@ -23,7 +23,7 @@
             <img src="/imagenes/logo16.png" class="logo" alt="">
             <input type="checkbox" id="menu_bar">
             <label class="icon-menu" for="menu_bar"></label>
-            <form action="/misRecetas" method=get>
+            <form action="/buscarRecetas" method=get>
                 <div id="busqueda">
                     <input type="text" class="buscar" name=nombre id="find" placeholder="Ejemplo: Pizza">
                     <input type="submit" value="Buscar" class="buscar" id="btn_find">
@@ -43,7 +43,7 @@
                 <div id="cuenta">
                     <div style="float: left;">
                     <h4 >@{{usuario.nombre}}</h4>
-                        <h4><a href="">Cerrar Sesion</a></h4>
+                        <h4><a href="/logout">Cerrar Sesion</a></h4>
                     </div>
                     <div style="float: right; ">
                         <img src="/imagenes/usuario.png" width="70px" height="70px">
@@ -81,9 +81,7 @@
                             <td><input name="porciones" type="text" v-model="receta.porciones"></td>
                             <td class="handlee_font">Tiémpo de Preparación</td>
                             <td><input name="horas" type="text" id="txt_hrs_min" v-model="receta.tiempoPreparacion" ></td>
-                            <td class="handlee_font">hrs</td>
-                            <td><input name="minutos" type="text" id="txt_hrs_min"></td>
-                            <td class="handlee_font">min</td>
+                            <td class="handlee_font">hrs:min</td>
                         </tr>
                     </table>
                 </div>

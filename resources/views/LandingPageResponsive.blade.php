@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Registro</title>
-        <meta id="token" name="token" value="{{ csrf_token() }}">
+        <meta name="csrf-token" content={{csrf_token()}}>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimum-scale=1.0">
        <!--  <link rel="stylesheet" href="css/EstilosInicioNew.css">
         <link rel="stylesheet" href="css/RegistroNew.css"> -->
@@ -11,10 +11,11 @@
         <link rel="stylesheet" href="/css/LandingPageResponsive.css">
         
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-        <script src="https://unpkg.com/vue"></script>
+        
+        <script src="/js/vue.js"></script>
         <script src="/jquery/jquery.js"></script>
         <script src="/jquery/jquery-3.1.1.js"></script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="/js/axios.min.js"></script>
         
     </head>
     <body >

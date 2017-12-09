@@ -7,10 +7,15 @@ new Vue({
     },
     mounted: function() {
         this.$nextTick(function() {
+            var config = {
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            }
             var idReceta = getParameterByName("idReceta");
             //            console.log(idReceta);
             var recetaVue = this.receta;
-            axios.post("/vueReceta", { idReceta }).then(function(response) {
+            axios.post("/vueReceta", { idReceta }, config).then(function(response) {
                     //console.log(response);
                     recetaVue.nombre = response.data.nombre;
                     recetaVue.dificultad = response.data.dificultad;

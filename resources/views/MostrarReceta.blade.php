@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="/css/EstilosInicio.css">
     <link rel="stylesheet" href="/css/fontello.css">
     <link rel="stylesheet" href="/css/mostrarReceta.css">
-    <meta name="csrf-token" content=@{{ csrf_token() }}>
+    <meta name="csrf-token" content={{csrf_token()}}>
     <script language="javascript" type="text/javascript" src="/jquery/jquery.js"></script>
     <script language="javascript" type="text/javascript" src="/jquery/jquery-1.11.3.js"></script>
     <script language="javascript" type="text/javascript" src="/jquery/jquery-3.1.1.js"></script>
     <script language="javascript" type="text/javascript" src="/js/Inicio.js"></script>
     <script language="javascript" type="text/javascript" src="/jquery/POP.js"></script>
-    <script src="https://unpkg.com/vue"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/vue.js"></script>
+    <script src="/js/axios.min.js"></script>
 
 </head>
 
@@ -25,7 +25,7 @@
             <img src="/imagenes/logo16.png" class="logo" height="80px" alt="">
             <input type="checkbox" id="menu_bar">
             <label class="icon-menu" for="menu_bar"></label>
-            <form action="/misRecetas" method=get>
+            <form action="/buscarRecetas" method=get>
                 <div id="busqueda">
                     <input type="text" class="buscar" name=nombre id="find" placeholder="Ejemplo: Pizza">
                     <input type="submit" value="Buscar" class="buscar" id="btn_find">
@@ -44,7 +44,7 @@
             <div id="cuenta">
                 <div style="float: left;">
                     <h4>@{{usuario.nombre}}</h4>
-                    <h4><a href="">Cerrar Sesion</a></h4>
+                    <h4><a href="/logout">Cerrar Sesion</a></h4>
                 </div>
                 <div style="float: right; ">
                     <img src="/imagenes/usuario.png" width="70px" height="70px">

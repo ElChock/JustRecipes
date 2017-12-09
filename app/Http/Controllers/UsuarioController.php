@@ -37,6 +37,10 @@ class UsuarioController extends Controller
         return $user;
     }
 
+    public function logout(Request $request){
+        $request->session()->forget('user');
+        return view("/LandingPageResponsive");
+    }
 
     public function login(Request $request){
 
@@ -52,7 +56,7 @@ class UsuarioController extends Controller
         //return ['redirect' => redirect('inicio')];
         //return view('inicio' );
         //return  redirect()->route('inicioLogin');
-        return  $request->session()->get('user');
+        //return  $request->session()->get('user');
         return Redirect::to('inicio') ;
         //showProfile();
         
@@ -78,7 +82,7 @@ class UsuarioController extends Controller
             $user->save();
             Mail::to($user->correo)->send(new mailGmail());
            // $mail=new mailGmail();
-            session('user', $user);
+            session(['user'=> $user]);
             //$user=Usuario::all();
             //$create = Usuario::create($user);
            // $email->sendEmail();

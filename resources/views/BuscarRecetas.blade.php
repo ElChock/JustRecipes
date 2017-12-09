@@ -78,10 +78,7 @@
                             <tr>
                                 <td rowspan=7 id=imagen_receta ><img src=/imagenes/pizza.jpg alt=></td>
                                 <td colspan=2>
-                                    <a :href="'/mostrarReceta?idReceta='+item.id " >  @{{item.nombre}}</a>
-                                    <button v-on:click="vueEliminarReceta(+item.id)" id=eliminar class="btn btn-danger btn-sm">Eliminar </button>
-                                    <a class="btn btn-info btn-sm" :href="'/crearReceta?idReceta='+item.id" role="button">Editar</a>
-                                    
+                                    <a :href="'/mostrarReceta?idReceta='+item.id " >  @{{item.nombre}}</a>                                 
                                 </td > 
                             </tr>
                             <tr id=ocultar>
@@ -205,7 +202,7 @@
     <script src="/jquery/menu.js"></script>
     <script src="/jquery/javascript.js"></script>
     <script src="/js/tools.js"></script>
-    <script src="/js/MisRecetasVue.js"></script>
+    <script src="/js/BuscarRecetasVue.js"></script>
     <script src="/js/SesionVue.js"></script>
     </body>
 </html>

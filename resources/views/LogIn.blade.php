@@ -10,9 +10,10 @@
         <link rel="stylesheet" href="/css/LandingPageResponsive.css">
 
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+        <meta name="csrf-token" content={{csrf_token()}}>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://unpkg.com/vue"></script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="/js/vue.js"></script>
+        <script src="/js/axios.min.js"></script>
         <script src="/jquery/jquery.js"></script>
         <script src="/jquery/jquery-1.11.3.js"></script>
         <script src="/jquery/jquery-3.1.1.js"></script>

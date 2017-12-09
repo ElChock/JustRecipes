@@ -1,29 +1,24 @@
 new Vue({
-    el: "#cuenta",
+    el: "#recetas",
     data: {
-        receta: { "nombre": "", "id": "", "dificultad": "", "porciones": "", "tiempoPreparacion": "", "descripcion": "" },
-        usuario: { "nombre": "", "id": "" }
-
+        receta: { "nombre": "", "id": "", "dificultad": "", "porciones": "", "tiempoPreparacion": "", "descripcion": "" }
     },
-    mounted() {
+    mounted: function() {
+        {
 
-        var usuarioVue = this.usuario;
-        axios.post("/vueLoginStatus").then(function(response) {
-                user = response;
-                console.log(response);
-                usuarioVue.nombre = user.data[0].nombre;
-                usuarioVue.id = user.data[0].id;
-            })
-            .catch(function(error) {
-                console.log(error)
-            });
-        this.mostrarRecetas();
+            this.mostrarRecetas();
 
+        }
     },
     methods: {
         mostrarRecetas() {
+            var config = {
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            }
             var recetaVue = this.receta;
-            axios.post("vueRecetaTodas").then(function(response) {
+            axios.post("vueRecetaTodas", "", config).then(function(response) {
 
                 recetaVue = response.data;
 

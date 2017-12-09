@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/inicio',function(){
-    return view("inicio");
+    return view("Inicio");
 });
 
 Route::get('/crearReceta',function(){
@@ -31,16 +31,26 @@ Route::get("/editaPerfil",function(){
 });
 
 Route::get("/login",function(){
-    return view("login");
+    return view("Login");
 });
 
 Route::get("/mostrarReceta",function(){
-    return view("mostrarReceta");
+    return view("MostrarReceta");
 });
 
 Route::get("/misRecetas",function(){
     return view("MisRecetas");
 });
+
+Route::get("/buscarRecetas",function(){
+    return view("BuscarRecetas");
+});
+
+Route::get("/editarPerfil",function(){
+    return view("EditarPerfil");
+});
+
+Route::get("/logout","UsuarioController@logout");
 
 Route::post("/vueUser","UsuarioController@store");
 

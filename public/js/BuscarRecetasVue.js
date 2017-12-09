@@ -10,13 +10,12 @@ new Vue({
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             }
-
+            var nombre = getParameterByName("nombre");
             var recetaVue = this.receta;
-            axios.post("/vueMisRecetas").then(function(response) {
+            axios.post("/vueBuscarReceta", { nombre }, config).then(function(response) {
                     for (let index = 0; index < response.data.length; index++) {
                         recetaVue.push(response.data[index]);
                     }
-                    console.log(recetaVue);
                 })
                 .catch(function(error) {
                     console.log(error);
@@ -24,16 +23,5 @@ new Vue({
 
         })
 
-    },
-    methods: {
-        vueEliminarReceta: function(id) {
-            console.log(id);
-            axios.post("vueEliminarReceta", { id }, config).then(function(response) {
-                console.log(response);
-            }).catch(function(error) {
-                cosole.log(error)
-            })
-        }
     }
-
 });
