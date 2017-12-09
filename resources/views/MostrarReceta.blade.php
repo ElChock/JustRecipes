@@ -150,11 +150,11 @@
                             <td class="roboto_font" id="tam_mostrar_datos2">@{{receta.porciones}}</td>
                             <!-- <td colspan="3" class="roboto_font">Persónas</td> -->
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td id="calif_receta"><img src="/imagenes/calificacion.png" alt=""></td>
                             <td class="handlee_font">Rceta por: </td>
                             <td colspan="3" class="roboto_font" id="usuario_receta">Jovy</td>
-                        </tr>
+                        </tr> -->
                     </table>
                 </div>
             </div>
@@ -198,7 +198,7 @@
                                 </textarea> -->
                                 <ul>
                                     <li v-for="(item,index) in receta.ingredientesReceta">
-                                        @{{item.cantidad}} @{{item.nombre}}
+                                         @{{item.nombre}}
                                     </li>
                                 </ul>
                             </td>
@@ -256,6 +256,7 @@
                 </div>
             </div>
         </section>
+        
         <ul id="ul_top_recetas">
             <li>
                 <h2 class="icon-circle"></h2>

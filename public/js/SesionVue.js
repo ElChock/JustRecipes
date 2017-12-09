@@ -13,7 +13,7 @@ new Vue({
             var usuarioVue = this.usuario;
             axios.post("/vueLoginStatus", "", config).then(function(response) {
                     user = response;
-                    console.log(user);
+                    //console.log(user);
 
                     if (user.data[0]) {
                         usuarioVue.nombre = user.data[0].nombre;

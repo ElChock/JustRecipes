@@ -15,10 +15,11 @@ class RecetaController extends Controller
 {
     public function actualizar(Request $request){
         $receta = Receta::find($request["id"]);
+        $ingrediente = new Ingrediente();
         $recetaVue=$request;
         $user =  $request->session()->get('user');
         //return $user[0]->id;
-        return  $recetaVue["ingredientesReceta"];
+        //return  $request;
         $receta->nombre=$recetaVue["nombre"];
         $receta->idUsuario=$recetaVue["idUsuario"];
         $receta->porciones=$recetaVue["porciones"];
@@ -27,10 +28,13 @@ class RecetaController extends Controller
         $receta->descripcion=$recetaVue["descripcion"];
         $receta->tiempo=$recetaVue["tiempoPreparacion"];
         $receta->id=$recetaVue["id"];
+        
+
         // return  $receta->idUsuario;
         if($user[0]->id==$receta->idUsuario){
             //return "yolo";
             $receta->save();
+            //$ingrediente=Ingrediente::find($receta->id);
             
         }
         

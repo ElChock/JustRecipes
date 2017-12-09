@@ -71,3 +71,7 @@ Route::post("/vueBuscarReceta","RecetaController@buscarReceta");
 Route::post("/vueEliminarReceta","RecetaController@eliminar");
 
 Route::post("/vueActualizarReceta","RecetaController@actualizar");
+
+Route::post("/vueComentario","ComentarioController@comentar");
+
+Route::post("/vueComentario","ComentarioController@comentar");

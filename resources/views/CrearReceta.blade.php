@@ -113,13 +113,19 @@
                        <tbody>
                        <tr class="fila_base">
                             <td id="ing" class="handlee_font">Ingrediente :</td>
-                            <td><input type="text" name="ingrediente[]"  placeholder="ej: 100 gramos de jitomate picado"></td>
+                            <td>
+                                <input type="text" name="ingrediente[]"  placeholder="ej: 100 gramos de jitomate picado" >
+                                <input type="hidden" name="id"  >
+                            </td>
                             <td id="icono_cancel"><h1 class="icon-cancel"></h1>
                             </td>
                         </tr>
                         <tr>
                             <td id="ing" class="handlee_font">Ingrediente :</td>
-                            <td><input type="text" name="ingrediente[]" placeholder="ej: 100 gramos de jitomate picado"></td>
+                            <td>
+                                <input type="text" name="ingrediente[]" placeholder="ej: 100 gramos de jitomate picado">
+                                <input type="hidden" name="id"  >
+                            </td>
                             <td id="icono"><h1 class="icon-plus-circled"></h1>
                             </td>
                         </tr>
@@ -140,7 +146,10 @@
                        <tbody>
                        <tr class="fila_base_pasos">
                             <td id="ing_pasos" class="handlee_font">Paso :</td>
-                            <td><input type="text" name="pasos[]" placeholder="ej: 100 gramos de jitomate picado"></td>
+                            <td>
+                                <input type="text" name="pasos[]" placeholder="ej: 100 gramos de jitomate picado">
+                                <input type="hidden" name="id"  >
+                            </td>
                             <!-- <td id="tam_icon_pasos"><label for="imagen_pasos" class="icon-picture"></label></td> -->
                             <!-- <td id="tam_img_pasos"><input id="imagen_pasos" type="file"  name="imagenPasos[]"><div><img id="avatar_pasos"></div></td> -->
                             <td id="icono_cancel_pasos"><h1 class="icon-cancel"></h1>
@@ -148,7 +157,10 @@
                         </tr>
                         <tr>
                             <td id="ing_pasos" class="handlee_font">Paso :</td>
-                            <td><input type="text" name="pasos[]" placeholder="ej: 100 gramos de jitomate picado"></td>
+                            <td>
+                                <input type="text" name="pasos[]" placeholder="ej: 100 gramos de jitomate picado">
+                                <input type="hidden" name="id"  >
+                            </td>
                             <!-- <td id="tam_icon_pasos"><label for="imagen_pasos" class="icon-picture"></label></td> -->
                             <!-- <td id="tam_img_pasos"><input id="imagen_pasos" type="file" name="imagenPasos[]" ></td> -->
                             <td id="icono_pasos"><h1 class="icon-plus-circled"></h1>

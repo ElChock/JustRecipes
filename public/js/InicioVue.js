@@ -47,14 +47,8 @@ new Vue({
                         "<tr id=ocultar>" +
                         "<td class=handlee_font>Dificultad: </td>" +
                         "<td class=roboto_font>" + receta.dificultad + "</td>" +
-                        "</tr>" +
-                        "<tr id=ocultar>" +
-                        "<td id=calificacion colspan=2><img src=/imagenes/calificacion.png alt=></td>" +
-                        "</tr>" +
-                        "<tr id=ocultar>" +
-                        "<td class=handlee_font>Receta por:</td>" +
-                        "<td class=roboto_font id=usuario_receta colspan=2 >Jovy</td>" +
-                        "</tr>" +
+
+
                         "</table>" +
                         "</div>"
                 }
